@@ -1,0 +1,578 @@
+{
+  "version": "1.0.0",
+  "description": "Golden 30-car EV dataset",
+  "checksum": "ae6790ee5ddbe55b376924f469d4e35a6bbd98c6a834c8609f5b3713b73956b1",
+  "createdAt": "2025-12-05T20:19:55.284Z",
+  "vehicles": [
+    {
+      "id": 1,
+      "make": "Tesla",
+      "model": "Model S",
+      "category": "ev",
+      "msrp": 81288,
+      "finance": {
+        "type": "loan",
+        "termMonths": 72,
+        "apr": 2.46,
+        "depositPct": 0.18,
+        "principal": 67007
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "actualBestMonth": 69,
+        "actualBestEquity": 54758
+      }
+    },
+    {
+      "id": 2,
+      "make": "Tesla",
+      "model": "Model 3",
+      "category": "ev",
+      "msrp": 42736,
+      "finance": {
+        "type": "loan",
+        "termMonths": 48,
+        "apr": 3.72,
+        "depositPct": 0.16,
+        "principal": 36028
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "actualBestMonth": 45,
+        "actualBestEquity": 29446
+      }
+    },
+    {
+      "id": 3,
+      "make": "Tesla",
+      "model": "Model S",
+      "category": "ev",
+      "msrp": 98260,
+      "finance": {
+        "type": "loan",
+        "termMonths": 48,
+        "apr": 4.28,
+        "depositPct": 0.15,
+        "principal": 83545
+      },
+      "annualMileage": 15000,
+      "groundTruth": {
+        "actualBestMonth": 45,
+        "actualBestEquity": 63156
+      }
+    },
+    {
+      "id": 4,
+      "make": "Hyundai",
+      "model": "Ioniq 5",
+      "category": "ev",
+      "msrp": 56464,
+      "finance": {
+        "type": "loan",
+        "termMonths": 60,
+        "apr": 4.98,
+        "depositPct": 0.19,
+        "principal": 45548
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "actualBestMonth": 57,
+        "actualBestEquity": 39243
+      }
+    },
+    {
+      "id": 5,
+      "make": "Tesla",
+      "model": "Model Y",
+      "category": "ev",
+      "msrp": 60957,
+      "finance": {
+        "type": "loan",
+        "termMonths": 48,
+        "apr": 4.92,
+        "depositPct": 0.15,
+        "principal": 52089
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "actualBestMonth": 45,
+        "actualBestEquity": 40690
+      }
+    },
+    {
+      "id": 6,
+      "make": "Tesla",
+      "model": "Model Y",
+      "category": "ev",
+      "msrp": 57377,
+      "finance": {
+        "type": "loan",
+        "termMonths": 48,
+        "apr": 5.35,
+        "depositPct": 0.16,
+        "principal": 48223
+      },
+      "annualMileage": 15000,
+      "groundTruth": {
+        "actualBestMonth": 45,
+        "actualBestEquity": 35671
+      }
+    },
+    {
+      "id": 7,
+      "make": "Kia",
+      "model": "EV6",
+      "category": "ev",
+      "msrp": 49963,
+      "finance": {
+        "type": "loan",
+        "termMonths": 60,
+        "apr": 3.63,
+        "depositPct": 0.14,
+        "principal": 42869
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "actualBestMonth": 57,
+        "actualBestEquity": 34076
+      }
+    },
+    {
+      "id": 8,
+      "make": "Chevrolet",
+      "model": "Bolt EV",
+      "category": "ev",
+      "msrp": 30417,
+      "finance": {
+        "type": "loan",
+        "termMonths": 60,
+        "apr": 4.6,
+        "depositPct": 0.16,
+        "principal": 25540
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "actualBestMonth": 57,
+        "actualBestEquity": 19236
+      }
+    },
+    {
+      "id": 9,
+      "make": "Ford",
+      "model": "Mustang Mach-E",
+      "category": "ev",
+      "msrp": 62294,
+      "finance": {
+        "type": "loan",
+        "termMonths": 60,
+        "apr": 3.77,
+        "depositPct": 0.13,
+        "principal": 54004
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "actualBestMonth": 57,
+        "actualBestEquity": 42824
+      }
+    },
+    {
+      "id": 10,
+      "make": "Tesla",
+      "model": "Model S",
+      "category": "ev",
+      "msrp": 84560,
+      "finance": {
+        "type": "loan",
+        "termMonths": 48,
+        "apr": 3.1,
+        "depositPct": 0.13,
+        "principal": 73522
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "actualBestMonth": 45,
+        "actualBestEquity": 54753
+      }
+    },
+    {
+      "id": 11,
+      "make": "Tesla",
+      "model": "Model 3",
+      "category": "ev",
+      "msrp": 50139,
+      "finance": {
+        "type": "loan",
+        "termMonths": 48,
+        "apr": 2.75,
+        "depositPct": 0.13,
+        "principal": 43835
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "actualBestMonth": 45,
+        "actualBestEquity": 33014
+      }
+    },
+    {
+      "id": 12,
+      "make": "Nissan",
+      "model": "Leaf",
+      "category": "ev",
+      "msrp": 29932,
+      "finance": {
+        "type": "loan",
+        "termMonths": 48,
+        "apr": 4.77,
+        "depositPct": 0.13,
+        "principal": 26058
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "actualBestMonth": 45,
+        "actualBestEquity": 19623
+      }
+    },
+    {
+      "id": 13,
+      "make": "Tesla",
+      "model": "Model 3",
+      "category": "ev",
+      "msrp": 49791,
+      "finance": {
+        "type": "loan",
+        "termMonths": 36,
+        "apr": 5.56,
+        "depositPct": 0.19,
+        "principal": 40547
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "actualBestMonth": 33,
+        "actualBestEquity": 34935
+      }
+    },
+    {
+      "id": 14,
+      "make": "Hyundai",
+      "model": "Ioniq 5",
+      "category": "ev",
+      "msrp": 49361,
+      "finance": {
+        "type": "loan",
+        "termMonths": 48,
+        "apr": 3.17,
+        "depositPct": 0.14,
+        "principal": 42248
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "actualBestMonth": 45,
+        "actualBestEquity": 33981
+      }
+    },
+    {
+      "id": 15,
+      "make": "Chevrolet",
+      "model": "Bolt EV",
+      "category": "ev",
+      "msrp": 34207,
+      "finance": {
+        "type": "loan",
+        "termMonths": 72,
+        "apr": 5.7,
+        "depositPct": 0.12,
+        "principal": 30168
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "actualBestMonth": 69,
+        "actualBestEquity": 21031
+      }
+    },
+    {
+      "id": 16,
+      "make": "Hyundai",
+      "model": "Ioniq 5",
+      "category": "ev",
+      "msrp": 56415,
+      "finance": {
+        "type": "loan",
+        "termMonths": 72,
+        "apr": 3.2,
+        "depositPct": 0.16,
+        "principal": 47620
+      },
+      "annualMileage": 15000,
+      "groundTruth": {
+        "actualBestMonth": 69,
+        "actualBestEquity": 32170
+      }
+    },
+    {
+      "id": 17,
+      "make": "Ford",
+      "model": "Mustang Mach-E",
+      "category": "ev",
+      "msrp": 47407,
+      "finance": {
+        "type": "loan",
+        "termMonths": 48,
+        "apr": 4.11,
+        "depositPct": 0.17,
+        "principal": 39201
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "actualBestMonth": 45,
+        "actualBestEquity": 32036
+      }
+    },
+    {
+      "id": 18,
+      "make": "Hyundai",
+      "model": "Ioniq 5",
+      "category": "ev",
+      "msrp": 55199,
+      "finance": {
+        "type": "loan",
+        "termMonths": 48,
+        "apr": 4.44,
+        "depositPct": 0.14,
+        "principal": 47319
+      },
+      "annualMileage": 15000,
+      "groundTruth": {
+        "actualBestMonth": 45,
+        "actualBestEquity": 34033
+      }
+    },
+    {
+      "id": 19,
+      "make": "Chevrolet",
+      "model": "Bolt EV",
+      "category": "ev",
+      "msrp": 28636,
+      "finance": {
+        "type": "loan",
+        "termMonths": 60,
+        "apr": 5.81,
+        "depositPct": 0.14,
+        "principal": 24703
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "actualBestMonth": 57,
+        "actualBestEquity": 18319
+      }
+    },
+    {
+      "id": 20,
+      "make": "Hyundai",
+      "model": "Ioniq 5",
+      "category": "ev",
+      "msrp": 55881,
+      "finance": {
+        "type": "loan",
+        "termMonths": 48,
+        "apr": 5.16,
+        "depositPct": 0.16,
+        "principal": 46912
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "actualBestMonth": 45,
+        "actualBestEquity": 39007
+      }
+    },
+    {
+      "id": 21,
+      "make": "Nissan",
+      "model": "Leaf",
+      "category": "ev",
+      "msrp": 30620,
+      "finance": {
+        "type": "loan",
+        "termMonths": 60,
+        "apr": 4.65,
+        "depositPct": 0.13,
+        "principal": 26575
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "actualBestMonth": 57,
+        "actualBestEquity": 20567
+      }
+    },
+    {
+      "id": 22,
+      "make": "Nissan",
+      "model": "Leaf",
+      "category": "ev",
+      "msrp": 31179,
+      "finance": {
+        "type": "loan",
+        "termMonths": 72,
+        "apr": 4.02,
+        "depositPct": 0.15,
+        "principal": 26655
+      },
+      "annualMileage": 15000,
+      "groundTruth": {
+        "actualBestMonth": 69,
+        "actualBestEquity": 18047
+      }
+    },
+    {
+      "id": 23,
+      "make": "Chevrolet",
+      "model": "Bolt EV",
+      "category": "ev",
+      "msrp": 34317,
+      "finance": {
+        "type": "loan",
+        "termMonths": 72,
+        "apr": 5.76,
+        "depositPct": 0.16,
+        "principal": 28676
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "actualBestMonth": 69,
+        "actualBestEquity": 22083
+      }
+    },
+    {
+      "id": 24,
+      "make": "Tesla",
+      "model": "Model Y",
+      "category": "ev",
+      "msrp": 45886,
+      "finance": {
+        "type": "loan",
+        "termMonths": 36,
+        "apr": 4.85,
+        "depositPct": 0.11,
+        "principal": 40696
+      },
+      "annualMileage": 15000,
+      "groundTruth": {
+        "actualBestMonth": 33,
+        "actualBestEquity": 29324
+      }
+    },
+    {
+      "id": 25,
+      "make": "Tesla",
+      "model": "Model 3",
+      "category": "ev",
+      "msrp": 44841,
+      "finance": {
+        "type": "loan",
+        "termMonths": 36,
+        "apr": 2,
+        "depositPct": 0.19,
+        "principal": 36192
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "actualBestMonth": 33,
+        "actualBestEquity": 30319
+      }
+    },
+    {
+      "id": 26,
+      "make": "Nissan",
+      "model": "Leaf",
+      "category": "ev",
+      "msrp": 37572,
+      "finance": {
+        "type": "loan",
+        "termMonths": 36,
+        "apr": 5.23,
+        "depositPct": 0.2,
+        "principal": 30153
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "actualBestMonth": 33,
+        "actualBestEquity": 26056
+      }
+    },
+    {
+      "id": 27,
+      "make": "Tesla",
+      "model": "Model Y",
+      "category": "ev",
+      "msrp": 48340,
+      "finance": {
+        "type": "loan",
+        "termMonths": 60,
+        "apr": 3.41,
+        "depositPct": 0.14,
+        "principal": 41727
+      },
+      "annualMileage": 15000,
+      "groundTruth": {
+        "actualBestMonth": 57,
+        "actualBestEquity": 28472
+      }
+    },
+    {
+      "id": 28,
+      "make": "Kia",
+      "model": "EV6",
+      "category": "ev",
+      "msrp": 50818,
+      "finance": {
+        "type": "loan",
+        "termMonths": 48,
+        "apr": 4.5,
+        "depositPct": 0.17,
+        "principal": 42026
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "actualBestMonth": 45,
+        "actualBestEquity": 36188
+      }
+    },
+    {
+      "id": 29,
+      "make": "Tesla",
+      "model": "Model S",
+      "category": "ev",
+      "msrp": 86734,
+      "finance": {
+        "type": "loan",
+        "termMonths": 60,
+        "apr": 4.16,
+        "depositPct": 0.18,
+        "principal": 71436
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "actualBestMonth": 57,
+        "actualBestEquity": 58765
+      }
+    },
+    {
+      "id": 30,
+      "make": "Chevrolet",
+      "model": "Bolt EV",
+      "category": "ev",
+      "msrp": 31119,
+      "finance": {
+        "type": "loan",
+        "termMonths": 72,
+        "apr": 5.58,
+        "depositPct": 0.13,
+        "principal": 26994
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "actualBestMonth": 69,
+        "actualBestEquity": 19088
+      }
+    }
+  ]
+}

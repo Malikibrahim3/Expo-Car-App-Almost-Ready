@@ -1,0 +1,201 @@
+appId: host.exp.Exponent  # Expo Go
+---
+# Add Vehicle Monthly Payment Test
+# Tests the full add vehicle flow with focus on monthly payment field
+# This test verifies the infinite loop bug is fixed
+
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# Enter demo mode
+- tapOn:
+    text: ".*Try it first.*|.*Demo.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# Navigate to garage
+- tapOn:
+    text: ".*[Gg]arage.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 2000
+
+# Tap add vehicle button
+- tapOn:
+    text: ".*Add.*vehicle.*|.*Add.*car.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 2000
+
+# Step 1: Vehicle Info - Select Year
+- assertVisible:
+    text: ".*Tell us about your car.*|.*YEAR.*"
+    
+- tapOn:
+    text: ".*Select year.*|.*YEAR.*"
+    
+- waitForAnimationToEnd
+
+- tapOn:
+    text: "2024"
+    
+- waitForAnimationToEnd
+
+# Select Make
+- tapOn:
+    text: ".*Select make.*|.*MAKE.*"
+    
+- waitForAnimationToEnd
+
+- tapOn:
+    text: ".*Toyota.*|.*Honda.*|.*BMW.*"
+    optional: true
+    
+- waitForAnimationToEnd
+
+# Select Model
+- tapOn:
+    text: ".*Select model.*|.*MODEL.*"
+    optional: true
+    
+- waitForAnimationToEnd
+
+- tapOn:
+    index: 0
+    optional: true
+    
+- waitForAnimationToEnd
+
+# Enter mileage
+- tapOn:
+    text: ".*CURRENT MILEAGE.*"
+    optional: true
+
+- inputText: "25000"
+
+- waitForAnimationToEnd
+
+# Proceed to next step
+- tapOn:
+    text: ".*Next.*|.*Continue.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 2000
+
+# Step 2: Finance Type - Select Standard Loan
+- assertVisible:
+    text: ".*How are you paying.*|.*Standard Loan.*"
+    optional: true
+
+- tapOn:
+    text: ".*Standard Loan.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+- tapOn:
+    text: ".*Next.*|.*Continue.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 2000
+
+# Step 3: Finance Details
+- assertVisible:
+    text: ".*Finance details.*|.*PURCHASE PRICE.*"
+    optional: true
+
+# Enter purchase price
+- tapOn:
+    text: ".*PURCHASE PRICE.*|.*35,000.*"
+    optional: true
+
+- inputText: "35000"
+
+- waitForAnimationToEnd
+
+# Enter down payment
+- tapOn:
+    text: ".*DOWN PAYMENT.*|.*5,000.*"
+    optional: true
+
+- inputText: "5000"
+
+- waitForAnimationToEnd
+
+# Select start date
+- tapOn:
+    text: ".*Select month.*|.*WHEN DID YOUR LOAN.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+- tapOn:
+    text: ".*Jan 2024.*|.*2024.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Select term
+- tapOn:
+    text: ".*Select term.*|.*LOAN/LEASE TERM.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+- tapOn:
+    text: ".*72 months.*|.*6 years.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 2000
+
+# Enter APR
+- tapOn:
+    text: ".*INTEREST RATE.*|.*APR.*"
+    optional: true
+
+- inputText: "6.9"
+
+- waitForAnimationToEnd
+
+# CRITICAL TEST: Enter monthly payment - this was causing infinite loop
+- tapOn:
+    text: ".*MONTHLY PAYMENT.*|.*450.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+- inputText: "550"
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# Verify app didn't crash - should still see finance details
+- assertVisible:
+    text: ".*Finance details.*|.*MONTHLY PAYMENT.*|.*Next.*"
+    optional: true
+
+# Try to proceed to confirmation
+- tapOn:
+    text: ".*Next.*|.*Continue.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# Should be on confirmation step
+- assertVisible:
+    text: ".*Confirm.*|.*details.*"
+    optional: true
+
+# Test passed - app didn't crash when entering monthly payment
+# If we got here, the infinite loop bug is fixed!

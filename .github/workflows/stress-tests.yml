@@ -1,0 +1,200 @@
+name: Stress Test Suite
+
+on:
+  pull_request:
+    branches: [main, develop]
+    paths:
+      - 'src/utils/equityCalculator.ts'
+      - 'src/utils/sellRecommendation.ts'
+      - 'tests/stress-suite/**'
+  push:
+    branches: [main]
+  schedule:
+    # Nightly at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Test mode'
+        required: true
+        default: 'pr'
+        type: choice
+        options:
+          - pr
+          - nightly
+          - full
+
+env:
+  NODE_VERSION: '18'
+
+jobs:
+  # ============================================================================
+  # PR-LEVEL TESTS (Fast, blocking)
+  # ============================================================================
+  pr-tests:
+    name: PR Gate Tests
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' || github.event.inputs.mode == 'pr'
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate golden data (if needed)
+        run: |
+          if [ ! -f tests/stress-suite/golden-data/golden-100.json ]; then
+            node tests/stress-suite/generators/generateGoldenData.js
+          fi
+      
+      - name: Run PR stress tests
+        id: stress-tests
+        run: node tests/stress-suite/runners/runFullStressSuite.js --pr
+      
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pr-stress-test-results
+          path: tests/stress-suite/results/
+          retention-days: 30
+      
+      - name: Comment on PR
+        if: failure() && github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const resultsPath = 'tests/stress-suite/results/stress-test-results.json';
+            let comment = '## ❌ Stress Tests Failed\n\n';
+            
+            if (fs.existsSync(resultsPath)) {
+              const results = JSON.parse(fs.readFileSync(resultsPath, 'utf8'));
+              comment += '### Failed Gates:\n';
+              results.gates.blockers.forEach(b => {
+                comment += `- ${b}\n`;
+              });
+              comment += '\n### Test Results:\n';
+              for (const [name, result] of Object.entries(results.tests)) {
+                const status = result.passed ? '✅' : '❌';
+                comment += `- ${name}: ${status}\n`;
+              }
+            }
+            
+            comment += '\n\nPlease fix the failing tests before merging.';
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
+
+  # ============================================================================
+  # NIGHTLY TESTS (Full Monte Carlo + Edge Cases)
+  # ============================================================================
+  nightly-tests:
+    name: Nightly Stress Tests
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event.inputs.mode == 'nightly'
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Generate golden data
+        run: node tests/stress-suite/generators/generateGoldenData.js
+      
+      - name: Run nightly stress tests
+        id: nightly-tests
+        run: node tests/stress-suite/runners/runFullStressSuite.js --nightly
+      
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: nightly-stress-test-results
+          path: tests/stress-suite/results/
+          retention-days: 90
+      
+      - name: Alert on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const resultsPath = 'tests/stress-suite/results/stress-test-results.json';
+            
+            let body = '## 🚨 Nightly Stress Tests Failed\n\n';
+            body += 'The nightly stress test suite has failed.\n\n';
+            
+            if (fs.existsSync(resultsPath)) {
+              const results = JSON.parse(fs.readFileSync(resultsPath, 'utf8'));
+              body += '### Summary:\n';
+              body += `- Passed: ${results.summary.passed}\n`;
+              body += `- Failed: ${results.summary.failed}\n`;
+              body += `- Warnings: ${results.summary.warnings}\n\n`;
+              
+              if (results.gates.blockers.length > 0) {
+                body += '### Blockers:\n';
+                results.gates.blockers.forEach(b => body += `- ${b}\n`);
+              }
+            }
+            
+            // Create issue for tracking
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🚨 Nightly Stress Tests Failed - ${new Date().toISOString().split('T')[0]}`,
+              body: body,
+              labels: ['bug', 'stress-test-failure', 'high-priority']
+            });
+
+  # ============================================================================
+  # FULL TESTS (Pre-release validation)
+  # ============================================================================
+  full-tests:
+    name: Full Stress Test Suite
+    runs-on: ubuntu-latest
+    if: github.event.inputs.mode == 'full'
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Generate golden data
+        run: node tests/stress-suite/generators/generateGoldenData.js
+      
+      - name: Run full stress tests
+        run: node tests/stress-suite/runners/runFullStressSuite.js --full --verbose
+      
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: full-stress-test-results
+          path: tests/stress-suite/results/
+          retention-days: 180

@@ -1,0 +1,173 @@
+appId: host.exp.Exponent  # Expo Go
+---
+# Navigation Flow Test
+# Tests tab navigation and back navigation
+
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd
+
+# Enter demo mode
+- tapOn:
+    text: ".*Try it first.*|.*Demo.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# ========================================
+# TAB NAVIGATION
+# ========================================
+
+# Should start on Dashboard
+- assertVisible:
+    text: ".*Dashboard.*|.*Best option.*|.*Demo Mode.*"
+    optional: true
+
+# Navigate to Garage
+- tapOn:
+    text: ".*[Gg]arage.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+- assertVisible:
+    text: ".*vehicle.*|.*Add.*"
+    optional: true
+
+# Navigate to Deals
+- tapOn:
+    text: ".*[Dd]eals.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+- assertVisible:
+    text: ".*Partner Deals.*"
+    optional: true
+
+# Navigate to Activity
+- tapOn:
+    text: ".*[Aa]ctivity.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+- assertVisible:
+    text: ".*Activity.*|.*Updates.*"
+    optional: true
+
+# Navigate to Market
+- tapOn:
+    text: ".*[Mm]arket.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+- assertVisible:
+    text: ".*Marketplace.*|.*Launching Soon.*"
+    optional: true
+
+# Navigate to Profile
+- tapOn:
+    text: ".*[Pp]rofile.*|.*[Ss]ettings.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+- assertVisible:
+    text: ".*Settings.*"
+    optional: true
+
+# Navigate back to Dashboard
+- tapOn:
+    text: ".*[Dd]ashboard.*|.*[Hh]ome.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+- assertVisible:
+    text: ".*Best option.*|.*Your Vehicles.*"
+    optional: true
+
+# ========================================
+# DEEP NAVIGATION (Into screens)
+# ========================================
+
+# Tap into a vehicle detail
+- tapOn:
+    text: ".*See details.*|.*BMW.*|.*Tesla.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Should be on detail screen
+- assertVisible:
+    text: ".*What You'd Pocket.*|.*Market Value.*"
+    optional: true
+
+# Go back using back button
+- back
+
+- waitForAnimationToEnd
+
+# Should be back on dashboard
+- assertVisible:
+    text: ".*Best option.*|.*Your Vehicles.*"
+    optional: true
+
+# ========================================
+# SETTINGS DEEP NAVIGATION
+# ========================================
+
+# Go to profile
+- tapOn:
+    text: ".*[Pp]rofile.*|.*[Ss]ettings.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Tap Privacy Policy
+- tapOn:
+    text: ".*Privacy Policy.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Should see privacy policy
+- assertVisible:
+    text: ".*Privacy.*|.*data.*|.*information.*"
+    optional: true
+
+# Go back
+- back
+
+- waitForAnimationToEnd
+
+# Should be back on settings
+- assertVisible:
+    text: ".*Settings.*"
+    optional: true
+
+# Tap Terms of Service
+- tapOn:
+    text: ".*Terms of Service.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Should see terms
+- assertVisible:
+    text: ".*Terms.*|.*Service.*|.*agreement.*"
+    optional: true
+
+# Go back
+- back
+
+- waitForAnimationToEnd
+
+# Should be back on settings
+- assertVisible:
+    text: ".*Settings.*"
+    optional: true

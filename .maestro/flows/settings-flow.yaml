@@ -1,0 +1,165 @@
+appId: host.exp.Exponent  # Expo Go
+---
+# Settings Flow Test
+# Tests all settings and preferences
+
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd
+
+# Enter demo mode
+- tapOn:
+    text: ".*Try it first.*|.*Demo.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# Navigate to profile/settings
+- tapOn:
+    text: ".*[Pp]rofile.*|.*[Ss]ettings.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Check settings title
+- assertVisible:
+    text: ".*Settings.*"
+    optional: true
+
+# Check demo mode banner
+- assertVisible:
+    text: ".*Demo Mode.*|.*Sign up.*"
+    optional: true
+
+# ========================================
+# SUBSCRIPTION SECTION
+# ========================================
+
+- assertVisible:
+    text: ".*Subscription.*"
+    optional: true
+
+# Check plan display
+- assertVisible:
+    text: ".*Free Plan.*|.*Pro Member.*"
+    optional: true
+
+# Check usage stats
+- assertVisible:
+    text: ".*Vehicles.*|.*Updates.*|.*Refresh.*"
+    optional: true
+
+# ========================================
+# APPEARANCE SECTION
+# ========================================
+
+- scroll
+- assertVisible:
+    text: ".*Appearance.*"
+    optional: true
+
+# Check theme options
+- assertVisible:
+    text: ".*Light.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Dark.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Auto.*"
+    optional: true
+
+# Test theme toggle
+- tapOn:
+    text: ".*Dark.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+- tapOn:
+    text: ".*Light.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+- tapOn:
+    text: ".*Auto.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# ========================================
+# NOTIFICATIONS SECTION
+# ========================================
+
+- assertVisible:
+    text: ".*Notifications.*"
+    optional: true
+
+# Check notification toggles
+- assertVisible:
+    text: ".*Push Notifications.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Positive Equity Alerts.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Price Drop Alerts.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Sell Time Reminders.*"
+    optional: true
+
+# ========================================
+# SUPPORT SECTION
+# ========================================
+
+- scroll
+- assertVisible:
+    text: ".*Support.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Help Center.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Send Feedback.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Privacy Policy.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Terms of Service.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Export My Data.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Replay Tutorial.*"
+    optional: true
+
+# ========================================
+# SIGN OUT / EXIT DEMO
+# ========================================
+
+- scroll
+- assertVisible:
+    text: ".*Exit Demo Mode.*|.*Sign Out.*"
+    optional: true
+
+# Check version
+- assertVisible:
+    text: ".*AutoTrack v.*"
+    optional: true

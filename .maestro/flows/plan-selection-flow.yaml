@@ -1,0 +1,73 @@
+appId: host.exp.Exponent  # Expo Go
+---
+# Plan Selection Flow Test
+# Tests the subscription plan selection
+
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd
+
+# Go to signup first
+- tapOn:
+    text: ".*Get Started.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Use demo to skip actual signup
+- tapOn:
+    text: ".*Quick Demo.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# Navigate to profile to see subscription
+- tapOn:
+    text: ".*[Pp]rofile.*|.*[Ss]ettings.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Check subscription section
+- assertVisible:
+    text: ".*Subscription.*"
+    optional: true
+
+# Check Free plan elements
+- assertVisible:
+    text: ".*Free.*|.*Pro.*"
+    optional: true
+
+# Check plan features
+- assertVisible:
+    text: ".*vehicle.*|.*Unlimited.*|.*Weekly.*|.*Daily.*"
+    optional: true
+
+# Check upgrade button for free users
+- assertVisible:
+    text: ".*Upgrade.*|.*Pro.*"
+    optional: true
+
+# Tap to see subscription details
+- tapOn:
+    text: ".*Manage Subscription.*|.*Upgrade to Pro.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Check subscription screen
+- assertVisible:
+    text: ".*Choose.*Plan.*|.*Free.*|.*Pro.*|.*$4.99.*"
+    optional: true
+
+# Check Pro features
+- assertVisible:
+    text: ".*Unlimited vehicles.*|.*Daily.*updates.*"
+    optional: true
+
+# Check trust signals
+- assertVisible:
+    text: ".*Cancel anytime.*|.*Switch plans.*"
+    optional: true

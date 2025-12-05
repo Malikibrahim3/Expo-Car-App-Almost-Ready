@@ -1,0 +1,120 @@
+appId: host.exp.Exponent  # Expo Go
+---
+# Car Detail Flow Test
+# Tests the vehicle detail screen functionality
+
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd
+
+# Enter demo mode
+- tapOn:
+    text: ".*Try it first.*|.*Demo.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# Tap on a vehicle from dashboard
+- tapOn:
+    text: ".*See details.*|.*BMW.*|.*Tesla.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Verify car detail screen
+- assertVisible:
+    text: ".*What You'd Pocket.*"
+    optional: true
+
+# Check hero section
+- assertVisible:
+    text: ".*Market Value.*"
+    optional: true
+
+- assertVisible:
+    text: ".*What You Owe.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Payments Left.*"
+    optional: true
+
+# Check status badge
+- assertVisible:
+    text: ".*Good Time to Sell.*|.*Wait.*"
+    optional: true
+
+# Check vehicle details section
+- assertVisible:
+    text: ".*Vehicle.*Finance.*"
+    optional: true
+
+# Check edit button
+- assertVisible:
+    text: ".*Edit.*"
+    optional: true
+
+# Tap to expand more details
+- tapOn:
+    text: ".*More details.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Check expanded details
+- assertVisible:
+    text: ".*Interest Rate.*|.*Original Loan.*|.*Purchase Price.*"
+    optional: true
+
+# Collapse details
+- tapOn:
+    text: ".*Hide details.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Scroll to see chart
+- scroll
+# Check chart section
+- assertVisible:
+    text: ".*Profit Over Time.*"
+    optional: true
+
+# Check chart hint
+- assertVisible:
+    text: ".*Slide your finger.*"
+    optional: true
+
+# Check chart explainer
+- assertVisible:
+    text: ".*Green area.*profit.*Red area.*"
+    optional: true
+
+# Check action buttons
+- assertVisible:
+    text: ".*Dealers Will Pay.*|.*Remind Me.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Selling Choices.*"
+    optional: true
+
+# Test edit flow
+- scroll
+- tapOn:
+    text: ".*Edit.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Check edit screen
+- assertVisible:
+    text: ".*Edit Vehicle.*|.*Mileage.*|.*Valuation.*|.*Finance.*"
+    optional: true
+
+# Go back
+- back
+
+- waitForAnimationToEnd

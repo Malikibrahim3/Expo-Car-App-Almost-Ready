@@ -1,0 +1,8 @@
+test,id,make,model,predicted,actual
+balloon,2,Audi,A4,pay_balloon_or_refinance,sell_before_balloon
+balloon,12,Toyota,Corolla,pay_balloon_or_refinance,sell_before_balloon
+balloon,19,Ford,Mustang Mach-E,pay_balloon_or_refinance,sell_before_balloon
+balloon,31,Hyundai,Elantra,pay_balloon_or_refinance,sell_before_balloon
+balloon,34,Hyundai,Ioniq 5,pay_balloon_or_refinance,sell_before_balloon
+balloon,39,Toyota,Camry,pay_balloon_or_refinance,sell_before_balloon
+balloon,50,Lexus,IS,pay_balloon_or_refinance,sell_before_balloon

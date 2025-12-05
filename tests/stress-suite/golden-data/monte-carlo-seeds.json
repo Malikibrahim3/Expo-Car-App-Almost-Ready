@@ -1,0 +1,508 @@
+{
+  "version": "1.0.0",
+  "description": "Deterministic seeds for Monte Carlo simulations",
+  "checksum": "cdb5852cc40812945462101103e9c2731484d0d40807896023c0f73fe2ef3d20",
+  "createdAt": "2025-12-05T20:19:55.287Z",
+  "seeds": [
+    {
+      "seedId": 1,
+      "seed": 10000,
+      "description": "Monte Carlo seed batch 1"
+    },
+    {
+      "seedId": 2,
+      "seed": 10137,
+      "description": "Monte Carlo seed batch 2"
+    },
+    {
+      "seedId": 3,
+      "seed": 10274,
+      "description": "Monte Carlo seed batch 3"
+    },
+    {
+      "seedId": 4,
+      "seed": 10411,
+      "description": "Monte Carlo seed batch 4"
+    },
+    {
+      "seedId": 5,
+      "seed": 10548,
+      "description": "Monte Carlo seed batch 5"
+    },
+    {
+      "seedId": 6,
+      "seed": 10685,
+      "description": "Monte Carlo seed batch 6"
+    },
+    {
+      "seedId": 7,
+      "seed": 10822,
+      "description": "Monte Carlo seed batch 7"
+    },
+    {
+      "seedId": 8,
+      "seed": 10959,
+      "description": "Monte Carlo seed batch 8"
+    },
+    {
+      "seedId": 9,
+      "seed": 11096,
+      "description": "Monte Carlo seed batch 9"
+    },
+    {
+      "seedId": 10,
+      "seed": 11233,
+      "description": "Monte Carlo seed batch 10"
+    },
+    {
+      "seedId": 11,
+      "seed": 11370,
+      "description": "Monte Carlo seed batch 11"
+    },
+    {
+      "seedId": 12,
+      "seed": 11507,
+      "description": "Monte Carlo seed batch 12"
+    },
+    {
+      "seedId": 13,
+      "seed": 11644,
+      "description": "Monte Carlo seed batch 13"
+    },
+    {
+      "seedId": 14,
+      "seed": 11781,
+      "description": "Monte Carlo seed batch 14"
+    },
+    {
+      "seedId": 15,
+      "seed": 11918,
+      "description": "Monte Carlo seed batch 15"
+    },
+    {
+      "seedId": 16,
+      "seed": 12055,
+      "description": "Monte Carlo seed batch 16"
+    },
+    {
+      "seedId": 17,
+      "seed": 12192,
+      "description": "Monte Carlo seed batch 17"
+    },
+    {
+      "seedId": 18,
+      "seed": 12329,
+      "description": "Monte Carlo seed batch 18"
+    },
+    {
+      "seedId": 19,
+      "seed": 12466,
+      "description": "Monte Carlo seed batch 19"
+    },
+    {
+      "seedId": 20,
+      "seed": 12603,
+      "description": "Monte Carlo seed batch 20"
+    },
+    {
+      "seedId": 21,
+      "seed": 12740,
+      "description": "Monte Carlo seed batch 21"
+    },
+    {
+      "seedId": 22,
+      "seed": 12877,
+      "description": "Monte Carlo seed batch 22"
+    },
+    {
+      "seedId": 23,
+      "seed": 13014,
+      "description": "Monte Carlo seed batch 23"
+    },
+    {
+      "seedId": 24,
+      "seed": 13151,
+      "description": "Monte Carlo seed batch 24"
+    },
+    {
+      "seedId": 25,
+      "seed": 13288,
+      "description": "Monte Carlo seed batch 25"
+    },
+    {
+      "seedId": 26,
+      "seed": 13425,
+      "description": "Monte Carlo seed batch 26"
+    },
+    {
+      "seedId": 27,
+      "seed": 13562,
+      "description": "Monte Carlo seed batch 27"
+    },
+    {
+      "seedId": 28,
+      "seed": 13699,
+      "description": "Monte Carlo seed batch 28"
+    },
+    {
+      "seedId": 29,
+      "seed": 13836,
+      "description": "Monte Carlo seed batch 29"
+    },
+    {
+      "seedId": 30,
+      "seed": 13973,
+      "description": "Monte Carlo seed batch 30"
+    },
+    {
+      "seedId": 31,
+      "seed": 14110,
+      "description": "Monte Carlo seed batch 31"
+    },
+    {
+      "seedId": 32,
+      "seed": 14247,
+      "description": "Monte Carlo seed batch 32"
+    },
+    {
+      "seedId": 33,
+      "seed": 14384,
+      "description": "Monte Carlo seed batch 33"
+    },
+    {
+      "seedId": 34,
+      "seed": 14521,
+      "description": "Monte Carlo seed batch 34"
+    },
+    {
+      "seedId": 35,
+      "seed": 14658,
+      "description": "Monte Carlo seed batch 35"
+    },
+    {
+      "seedId": 36,
+      "seed": 14795,
+      "description": "Monte Carlo seed batch 36"
+    },
+    {
+      "seedId": 37,
+      "seed": 14932,
+      "description": "Monte Carlo seed batch 37"
+    },
+    {
+      "seedId": 38,
+      "seed": 15069,
+      "description": "Monte Carlo seed batch 38"
+    },
+    {
+      "seedId": 39,
+      "seed": 15206,
+      "description": "Monte Carlo seed batch 39"
+    },
+    {
+      "seedId": 40,
+      "seed": 15343,
+      "description": "Monte Carlo seed batch 40"
+    },
+    {
+      "seedId": 41,
+      "seed": 15480,
+      "description": "Monte Carlo seed batch 41"
+    },
+    {
+      "seedId": 42,
+      "seed": 15617,
+      "description": "Monte Carlo seed batch 42"
+    },
+    {
+      "seedId": 43,
+      "seed": 15754,
+      "description": "Monte Carlo seed batch 43"
+    },
+    {
+      "seedId": 44,
+      "seed": 15891,
+      "description": "Monte Carlo seed batch 44"
+    },
+    {
+      "seedId": 45,
+      "seed": 16028,
+      "description": "Monte Carlo seed batch 45"
+    },
+    {
+      "seedId": 46,
+      "seed": 16165,
+      "description": "Monte Carlo seed batch 46"
+    },
+    {
+      "seedId": 47,
+      "seed": 16302,
+      "description": "Monte Carlo seed batch 47"
+    },
+    {
+      "seedId": 48,
+      "seed": 16439,
+      "description": "Monte Carlo seed batch 48"
+    },
+    {
+      "seedId": 49,
+      "seed": 16576,
+      "description": "Monte Carlo seed batch 49"
+    },
+    {
+      "seedId": 50,
+      "seed": 16713,
+      "description": "Monte Carlo seed batch 50"
+    },
+    {
+      "seedId": 51,
+      "seed": 16850,
+      "description": "Monte Carlo seed batch 51"
+    },
+    {
+      "seedId": 52,
+      "seed": 16987,
+      "description": "Monte Carlo seed batch 52"
+    },
+    {
+      "seedId": 53,
+      "seed": 17124,
+      "description": "Monte Carlo seed batch 53"
+    },
+    {
+      "seedId": 54,
+      "seed": 17261,
+      "description": "Monte Carlo seed batch 54"
+    },
+    {
+      "seedId": 55,
+      "seed": 17398,
+      "description": "Monte Carlo seed batch 55"
+    },
+    {
+      "seedId": 56,
+      "seed": 17535,
+      "description": "Monte Carlo seed batch 56"
+    },
+    {
+      "seedId": 57,
+      "seed": 17672,
+      "description": "Monte Carlo seed batch 57"
+    },
+    {
+      "seedId": 58,
+      "seed": 17809,
+      "description": "Monte Carlo seed batch 58"
+    },
+    {
+      "seedId": 59,
+      "seed": 17946,
+      "description": "Monte Carlo seed batch 59"
+    },
+    {
+      "seedId": 60,
+      "seed": 18083,
+      "description": "Monte Carlo seed batch 60"
+    },
+    {
+      "seedId": 61,
+      "seed": 18220,
+      "description": "Monte Carlo seed batch 61"
+    },
+    {
+      "seedId": 62,
+      "seed": 18357,
+      "description": "Monte Carlo seed batch 62"
+    },
+    {
+      "seedId": 63,
+      "seed": 18494,
+      "description": "Monte Carlo seed batch 63"
+    },
+    {
+      "seedId": 64,
+      "seed": 18631,
+      "description": "Monte Carlo seed batch 64"
+    },
+    {
+      "seedId": 65,
+      "seed": 18768,
+      "description": "Monte Carlo seed batch 65"
+    },
+    {
+      "seedId": 66,
+      "seed": 18905,
+      "description": "Monte Carlo seed batch 66"
+    },
+    {
+      "seedId": 67,
+      "seed": 19042,
+      "description": "Monte Carlo seed batch 67"
+    },
+    {
+      "seedId": 68,
+      "seed": 19179,
+      "description": "Monte Carlo seed batch 68"
+    },
+    {
+      "seedId": 69,
+      "seed": 19316,
+      "description": "Monte Carlo seed batch 69"
+    },
+    {
+      "seedId": 70,
+      "seed": 19453,
+      "description": "Monte Carlo seed batch 70"
+    },
+    {
+      "seedId": 71,
+      "seed": 19590,
+      "description": "Monte Carlo seed batch 71"
+    },
+    {
+      "seedId": 72,
+      "seed": 19727,
+      "description": "Monte Carlo seed batch 72"
+    },
+    {
+      "seedId": 73,
+      "seed": 19864,
+      "description": "Monte Carlo seed batch 73"
+    },
+    {
+      "seedId": 74,
+      "seed": 20001,
+      "description": "Monte Carlo seed batch 74"
+    },
+    {
+      "seedId": 75,
+      "seed": 20138,
+      "description": "Monte Carlo seed batch 75"
+    },
+    {
+      "seedId": 76,
+      "seed": 20275,
+      "description": "Monte Carlo seed batch 76"
+    },
+    {
+      "seedId": 77,
+      "seed": 20412,
+      "description": "Monte Carlo seed batch 77"
+    },
+    {
+      "seedId": 78,
+      "seed": 20549,
+      "description": "Monte Carlo seed batch 78"
+    },
+    {
+      "seedId": 79,
+      "seed": 20686,
+      "description": "Monte Carlo seed batch 79"
+    },
+    {
+      "seedId": 80,
+      "seed": 20823,
+      "description": "Monte Carlo seed batch 80"
+    },
+    {
+      "seedId": 81,
+      "seed": 20960,
+      "description": "Monte Carlo seed batch 81"
+    },
+    {
+      "seedId": 82,
+      "seed": 21097,
+      "description": "Monte Carlo seed batch 82"
+    },
+    {
+      "seedId": 83,
+      "seed": 21234,
+      "description": "Monte Carlo seed batch 83"
+    },
+    {
+      "seedId": 84,
+      "seed": 21371,
+      "description": "Monte Carlo seed batch 84"
+    },
+    {
+      "seedId": 85,
+      "seed": 21508,
+      "description": "Monte Carlo seed batch 85"
+    },
+    {
+      "seedId": 86,
+      "seed": 21645,
+      "description": "Monte Carlo seed batch 86"
+    },
+    {
+      "seedId": 87,
+      "seed": 21782,
+      "description": "Monte Carlo seed batch 87"
+    },
+    {
+      "seedId": 88,
+      "seed": 21919,
+      "description": "Monte Carlo seed batch 88"
+    },
+    {
+      "seedId": 89,
+      "seed": 22056,
+      "description": "Monte Carlo seed batch 89"
+    },
+    {
+      "seedId": 90,
+      "seed": 22193,
+      "description": "Monte Carlo seed batch 90"
+    },
+    {
+      "seedId": 91,
+      "seed": 22330,
+      "description": "Monte Carlo seed batch 91"
+    },
+    {
+      "seedId": 92,
+      "seed": 22467,
+      "description": "Monte Carlo seed batch 92"
+    },
+    {
+      "seedId": 93,
+      "seed": 22604,
+      "description": "Monte Carlo seed batch 93"
+    },
+    {
+      "seedId": 94,
+      "seed": 22741,
+      "description": "Monte Carlo seed batch 94"
+    },
+    {
+      "seedId": 95,
+      "seed": 22878,
+      "description": "Monte Carlo seed batch 95"
+    },
+    {
+      "seedId": 96,
+      "seed": 23015,
+      "description": "Monte Carlo seed batch 96"
+    },
+    {
+      "seedId": 97,
+      "seed": 23152,
+      "description": "Monte Carlo seed batch 97"
+    },
+    {
+      "seedId": 98,
+      "seed": 23289,
+      "description": "Monte Carlo seed batch 98"
+    },
+    {
+      "seedId": 99,
+      "seed": 23426,
+      "description": "Monte Carlo seed batch 99"
+    },
+    {
+      "seedId": 100,
+      "seed": 23563,
+      "description": "Monte Carlo seed batch 100"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "timestamp": "2025-12-05T21:47:43.300Z",
+  "mode": "pr",
+  "tests": {
+    "golden100": {
+      "passed": true,
+      "metrics": {
+        "pct1Month": 1,
+        "pct2Months": 1,
+        "falsePositives": 0,
+        "totalVehicles": 100
+      },
+      "failures": []
+    },
+    "balloon": {
+      "passed": true,
+      "metrics": {
+        "accuracy": 1,
+        "correct": 50,
+        "total": 50
+      },
+      "failures": []
+    },
+    "performance": {
+      "passed": true,
+      "metrics": {
+        "avgTimeMs": 0.01592003999999978,
+        "maxTimeMs": 0.24191700000000083,
+        "deterministic": true,
+        "memoryGrowthMB": -0.33882904052734375
+      }
+    },
+    "regression": {
+      "passed": true,
+      "metrics": {
+        "mae": 0,
+        "maxDelta": 0,
+        "medianEquityDelta": 0
+      },
+      "needsApproval": false
+    }
+  },
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "warnings": 0
+  },
+  "gates": {
+    "allPassed": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

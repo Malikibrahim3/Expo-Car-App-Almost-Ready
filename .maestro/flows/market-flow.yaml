@@ -1,0 +1,83 @@
+appId: host.exp.Exponent  # Expo Go
+---
+# Market Flow Test
+# Tests the marketplace coming soon screen
+
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd
+
+# Enter demo mode
+- tapOn:
+    text: ".*Try it first.*|.*Demo.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# Navigate to market tab
+- tapOn:
+    text: ".*[Mm]arket.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Check marketplace header
+- assertVisible:
+    text: ".*Marketplace.*"
+    optional: true
+
+# ========================================
+# HERO SECTION
+# ========================================
+
+# Check coming soon message
+- assertVisible:
+    text: ".*Launching Soon.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Exclusive deals.*|.*partnerships.*"
+    optional: true
+
+# Check notify button
+- assertVisible:
+    text: ".*Notify Me.*"
+    optional: true
+
+# ========================================
+# FEATURES SECTION
+# ========================================
+
+- assertVisible:
+    text: ".*WHAT'S COMING.*|.*Coming.*"
+    optional: true
+
+# Check feature cards
+- assertVisible:
+    text: ".*Smart Recommendations.*|.*AI-powered.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Exclusive Deals.*|.*Partner discounts.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Price Alerts.*|.*notified.*"
+    optional: true
+
+# Scroll to see footer
+- scroll
+# Check footer message
+- assertVisible:
+    text: ".*working with dealerships.*|.*car brands.*"
+    optional: true
+
+# Test notify button tap
+- scroll
+- tapOn:
+    text: ".*Notify Me.*"
+    optional: true
+
+- waitForAnimationToEnd

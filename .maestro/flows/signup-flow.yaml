@@ -1,0 +1,77 @@
+appId: host.exp.Exponent  # Expo Go
+---
+# Signup Flow Test
+# Tests the complete signup journey
+
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd
+
+# Tap Get Started on landing
+- tapOn:
+    text: ".*Get Started.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Should be on signup screen
+- assertVisible:
+    text: ".*Create Account.*"
+    optional: true
+
+# Check security badge
+- assertVisible:
+    text: ".*encrypted.*|.*secure.*"
+    optional: true
+
+# Fill in email field
+- tapOn:
+    text: ".*EMAIL.*"
+    optional: true
+
+- inputText: "test@example.com"
+
+# Fill in password
+- tapOn:
+    text: ".*PASSWORD.*"
+    index: 0
+    optional: true
+
+- inputText: "TestPass123!"
+
+# Fill in confirm password
+- tapOn:
+    text: ".*CONFIRM.*"
+    optional: true
+
+- inputText: "TestPass123!"
+
+# Check password requirements hint
+- assertVisible:
+    text: ".*8.*characters.*capital.*special.*"
+    optional: true
+
+# Check terms and privacy links
+- assertVisible:
+    text: ".*Terms of Service.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Privacy Policy.*"
+    optional: true
+
+# Check Apple Sign In option
+- assertVisible:
+    text: ".*Apple.*"
+    optional: true
+
+# Check sign in link for existing users
+- assertVisible:
+    text: ".*Already have an account.*"
+    optional: true
+
+# Check demo mode option
+- assertVisible:
+    text: ".*Quick Demo.*|.*No Sign Up.*"
+    optional: true

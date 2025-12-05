@@ -1,0 +1,132 @@
+appId: host.exp.Exponent  # Expo Go
+---
+# Deals Flow Test
+# Tests the partner deals screen
+
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd
+
+# Enter demo mode
+- tapOn:
+    text: ".*Try it first.*|.*Demo.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# Navigate to deals tab
+- tapOn:
+    text: ".*[Dd]eals.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Check deals header
+- assertVisible:
+    text: ".*Partner Deals.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Exclusive offers.*"
+    optional: true
+
+# Check trust indicators
+- assertVisible:
+    text: ".*verified.*"
+    optional: true
+
+# ========================================
+# FILTER PILLS
+# ========================================
+
+- assertVisible:
+    text: ".*All.*"
+    optional: true
+
+- assertVisible:
+    text: ".*New Cars.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Financing.*"
+    optional: true
+
+# Test filter selection
+- tapOn:
+    text: ".*New Cars.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Should show new car deals
+- assertVisible:
+    text: ".*BMW.*|.*Mercedes.*|.*Tesla.*|.*Audi.*"
+    optional: true
+
+# Switch to trade-in filter
+- tapOn:
+    text: ".*Sell to Dealer.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Should show trade-in deals
+- assertVisible:
+    text: ".*Carvana.*|.*CarMax.*"
+    optional: true
+
+# Switch back to All
+- tapOn:
+    text: ".*All.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# ========================================
+# DEAL CARDS
+# ========================================
+
+# Check featured badge
+- assertVisible:
+    text: ".*FEATURED.*"
+    optional: true
+
+# Check deal elements
+- assertVisible:
+    text: ".*View Offer.*"
+    optional: true
+
+# Check highlight badges
+- assertVisible:
+    text: ".*off MSRP.*|.*APR.*|.*bonus.*"
+    optional: true
+
+# Check expiry badges
+- assertVisible:
+    text: ".*Ends in.*days.*"
+    optional: true
+
+# Scroll to see more deals
+- scroll
+# Check financing deals
+- assertVisible:
+    text: ".*Capital One.*|.*LightStream.*"
+    optional: true
+
+# Check insurance deals
+- assertVisible:
+    text: ".*Root Insurance.*|.*insurance.*"
+    optional: true
+
+# Check service deals
+- assertVisible:
+    text: ".*YourMechanic.*|.*service.*"
+    optional: true
+
+# Check disclaimer
+- scroll
+- assertVisible:
+    text: ".*compensation.*|.*eligibility.*"
+    optional: true

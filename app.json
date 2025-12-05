@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "CarValue Tracker",
+    "slug": "carvalue-tracker",
+    "version": "1.0.0",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.carvalue.tracker"
+    },
+    "android": {
+      "package": "com.carvalue.tracker"
+    },
+    "web": {
+      "favicon": "./public/favicon.ico",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "scheme": "carvalue",
+    "install": {
+      "exclude": ["typescript", "@types/react"]
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "supabaseUrl": "https://vlchonnjhjzxjdqvubnh.supabase.co",
+      "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZsY2hvbm5qaGp6eGpkcXZ1Ym5oIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ0OTg2MTUsImV4cCI6MjA4MDA3NDYxNX0.mSfzhd9sbCwFLgGqHCrk0gO3NOszlyHdJpKrLCA8ubA"
+    }
+  }
+}

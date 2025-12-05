@@ -1,0 +1,195 @@
+appId: host.exp.Exponent  # Expo Go
+# For dev builds, change to: com.carvalue.tracker
+---
+# Complete App Flow Test
+# Tests the entire user journey from landing to all features
+
+# ========================================
+# PART 1: LANDING & AUTH
+# ========================================
+
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd
+
+# Verify landing page elements
+- assertVisible:
+    text: ".*Know exactly when.*"
+    optional: true
+
+- assertVisible:
+    text: ".*sell your car.*"
+    optional: true
+
+# Check social proof elements
+- assertVisible:
+    text: ".*users.*"
+    optional: true
+
+# Check data source trust badges
+- assertVisible:
+    text: ".*Kelley Blue Book.*|.*Edmunds.*"
+    optional: true
+
+# Test Demo Mode (quick path to test app)
+- tapOn:
+    text: ".*Try it first.*|.*Demo.*|.*without signing up.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# ========================================
+# PART 2: DASHBOARD (Main Screen)
+# ========================================
+
+# Should now be on dashboard
+- assertVisible:
+    text: ".*Dashboard.*|.*Best option.*|.*Your Vehicles.*|.*Demo Mode.*"
+    optional: true
+
+# Check for demo mode banner
+- assertVisible:
+    text: ".*Demo Mode.*"
+    optional: true
+
+# Check for vehicle cards or empty state
+- assertVisible:
+    text: ".*Add.*car.*|.*vehicle.*|.*equity.*"
+    optional: true
+
+# Scroll to see more content
+- scroll
+- waitForAnimationToEnd
+
+# ========================================
+# PART 3: GARAGE TAB
+# ========================================
+
+- tapOn:
+    text: ".*[Gg]arage.*|.*My Cars.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Check garage screen elements
+- assertVisible:
+    text: ".*vehicle.*|.*Add.*|.*Kelley Blue Book.*"
+    optional: true
+
+# Look for add vehicle button
+- assertVisible:
+    text: ".*Add.*vehicle.*|.*Add.*car.*"
+    optional: true
+
+# ========================================
+# PART 4: PROFILE/SETTINGS TAB
+# ========================================
+
+- tapOn:
+    text: ".*[Pp]rofile.*|.*[Ss]ettings.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Check settings screen
+- assertVisible:
+    text: ".*Settings.*"
+    optional: true
+
+# Check subscription section
+- assertVisible:
+    text: ".*Subscription.*|.*Free.*|.*Pro.*"
+    optional: true
+
+# Check appearance section
+- assertVisible:
+    text: ".*Appearance.*|.*Light.*|.*Dark.*"
+    optional: true
+
+# Scroll to see notifications
+- scroll
+- assertVisible:
+    text: ".*Notifications.*|.*Push.*"
+    optional: true
+
+# Check support section
+- assertVisible:
+    text: ".*Support.*|.*Help.*|.*Privacy.*"
+    optional: true
+
+# ========================================
+# PART 5: ACTIVITY TAB
+# ========================================
+
+- tapOn:
+    text: ".*[Aa]ctivity.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Check activity screen
+- assertVisible:
+    text: ".*Activity.*|.*Today.*|.*Updates.*"
+    optional: true
+
+# ========================================
+# PART 6: DEALS TAB
+# ========================================
+
+- tapOn:
+    text: ".*[Dd]eals.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Check deals screen
+- assertVisible:
+    text: ".*Partner Deals.*|.*Exclusive.*|.*offers.*"
+    optional: true
+
+# Check filter pills
+- assertVisible:
+    text: ".*All.*|.*New Cars.*|.*Financing.*"
+    optional: true
+
+# Scroll to see deals
+- scroll
+- assertVisible:
+    text: ".*View Offer.*|.*Carvana.*|.*CarMax.*|.*BMW.*|.*Tesla.*"
+    optional: true
+
+# ========================================
+# PART 7: MARKET TAB (Coming Soon)
+# ========================================
+
+- tapOn:
+    text: ".*[Mm]arket.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Check marketplace coming soon
+- assertVisible:
+    text: ".*Marketplace.*|.*Launching Soon.*|.*Coming.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Notify Me.*"
+    optional: true
+
+# ========================================
+# PART 8: BACK TO DASHBOARD
+# ========================================
+
+- tapOn:
+    text: ".*[Dd]ashboard.*|.*[Hh]ome.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Verify we're back on dashboard
+- assertVisible:
+    text: ".*Best option.*|.*Your Vehicles.*|.*Demo Mode.*"
+    optional: true

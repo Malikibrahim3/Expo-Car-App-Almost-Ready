@@ -1,0 +1,1158 @@
+{
+  "version": "1.0.0",
+  "description": "Golden 50-car PCP/balloon dataset",
+  "checksum": "c34e776885f11adaeb5a867c765e967c545c616eb43bdeaadd44996e230591e0",
+  "createdAt": "2025-12-05T20:19:55.282Z",
+  "vehicles": [
+    {
+      "id": 1,
+      "make": "Hyundai",
+      "model": "Sonata",
+      "category": "economy",
+      "msrp": 30874,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 48,
+        "apr": 6.68,
+        "depositPct": 0.19,
+        "balloonPct": 0.63,
+        "principal": 24886,
+        "balloonAmount": 15555
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 8755,
+        "bestPreBalloonMonth": 39,
+        "bestPreBalloonEquity": 7664
+      }
+    },
+    {
+      "id": 2,
+      "make": "Audi",
+      "model": "A4",
+      "category": "premium",
+      "msrp": 42389,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 48,
+        "apr": 5.41,
+        "depositPct": 0.17,
+        "balloonPct": 0.63,
+        "principal": 35288,
+        "balloonAmount": 22368
+      },
+      "annualMileage": 15000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 3421,
+        "bestPreBalloonMonth": 40,
+        "bestPreBalloonEquity": 3280
+      }
+    },
+    {
+      "id": 3,
+      "make": "Tesla",
+      "model": "Model S",
+      "category": "ev",
+      "msrp": 86833,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 48,
+        "apr": 4.5,
+        "depositPct": 0.2,
+        "balloonPct": 0.37,
+        "principal": 69301,
+        "balloonAmount": 25872
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 41544,
+        "bestPreBalloonMonth": 44,
+        "bestPreBalloonEquity": 37559
+      }
+    },
+    {
+      "id": 4,
+      "make": "Honda",
+      "model": "Accord",
+      "category": "economy",
+      "msrp": 36192,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 48,
+        "apr": 5.28,
+        "depositPct": 0.14,
+        "balloonPct": 0.39,
+        "principal": 31285,
+        "balloonAmount": 12063
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 15024,
+        "bestPreBalloonMonth": 43,
+        "bestPreBalloonEquity": 14932
+      }
+    },
+    {
+      "id": 5,
+      "make": "Kia",
+      "model": "EV6",
+      "category": "ev",
+      "msrp": 45860,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 48,
+        "apr": 3.66,
+        "depositPct": 0.12,
+        "balloonPct": 0.3,
+        "principal": 40574,
+        "balloonAmount": 12183
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 20926,
+        "bestPreBalloonMonth": 44,
+        "bestPreBalloonEquity": 19435
+      }
+    },
+    {
+      "id": 6,
+      "make": "Audi",
+      "model": "A6",
+      "category": "premium",
+      "msrp": 66476,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 4.38,
+        "depositPct": 0.12,
+        "balloonPct": 0.51,
+        "principal": 58517,
+        "balloonAmount": 29925
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 15760,
+        "bestPreBalloonMonth": 32,
+        "bestPreBalloonEquity": 14550
+      }
+    },
+    {
+      "id": 7,
+      "make": "Tesla",
+      "model": "Model S",
+      "category": "ev",
+      "msrp": 91593,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 48,
+        "apr": 4.62,
+        "depositPct": 0.18,
+        "balloonPct": 0.65,
+        "principal": 74826,
+        "balloonAmount": 48461
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 17453,
+        "bestPreBalloonMonth": 41,
+        "bestPreBalloonEquity": 15945
+      }
+    },
+    {
+      "id": 8,
+      "make": "Audi",
+      "model": "A4",
+      "category": "premium",
+      "msrp": 49142,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 60,
+        "apr": 5.62,
+        "depositPct": 0.21,
+        "balloonPct": 0.52,
+        "principal": 38856,
+        "balloonAmount": 20020
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 9949,
+        "bestPreBalloonMonth": 54,
+        "bestPreBalloonEquity": 9393
+      }
+    },
+    {
+      "id": 9,
+      "make": "Honda",
+      "model": "Accord",
+      "category": "economy",
+      "msrp": 31585,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 60,
+        "apr": 5.91,
+        "depositPct": 0.24,
+        "balloonPct": 0.67,
+        "principal": 23997,
+        "balloonAmount": 16064
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 7163,
+        "bestPreBalloonMonth": 54,
+        "bestPreBalloonEquity": 7533
+      }
+    },
+    {
+      "id": 10,
+      "make": "Audi",
+      "model": "A4",
+      "category": "premium",
+      "msrp": 44115,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 3.89,
+        "depositPct": 0.19,
+        "balloonPct": 0.53,
+        "principal": 35524,
+        "balloonAmount": 18673
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 13183,
+        "bestPreBalloonMonth": 30,
+        "bestPreBalloonEquity": 11150
+      }
+    },
+    {
+      "id": 11,
+      "make": "Toyota",
+      "model": "Corolla",
+      "category": "economy",
+      "msrp": 26712,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 60,
+        "apr": 3.21,
+        "depositPct": 0.2,
+        "balloonPct": 0.5,
+        "principal": 21243,
+        "balloonAmount": 10585
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 7537,
+        "bestPreBalloonMonth": 52,
+        "bestPreBalloonEquity": 6833
+      }
+    },
+    {
+      "id": 12,
+      "make": "Toyota",
+      "model": "Corolla",
+      "category": "economy",
+      "msrp": 23146,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 3.52,
+        "depositPct": 0.23,
+        "balloonPct": 0.56,
+        "principal": 17902,
+        "balloonAmount": 10058
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 7234,
+        "bestPreBalloonMonth": 32,
+        "bestPreBalloonEquity": 7704
+      }
+    },
+    {
+      "id": 13,
+      "make": "Toyota",
+      "model": "Camry",
+      "category": "economy",
+      "msrp": 26271,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 48,
+        "apr": 4.52,
+        "depositPct": 0.25,
+        "balloonPct": 0.56,
+        "principal": 19725,
+        "balloonAmount": 10987
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 8001,
+        "bestPreBalloonMonth": 38,
+        "bestPreBalloonEquity": 7331
+      }
+    },
+    {
+      "id": 14,
+      "make": "Honda",
+      "model": "Accord",
+      "category": "economy",
+      "msrp": 37814,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 48,
+        "apr": 5.54,
+        "depositPct": 0.16,
+        "balloonPct": 0.59,
+        "principal": 31842,
+        "balloonAmount": 18647
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 9061,
+        "bestPreBalloonMonth": 41,
+        "bestPreBalloonEquity": 8104
+      }
+    },
+    {
+      "id": 15,
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "category": "premium",
+      "msrp": 50836,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 60,
+        "apr": 5.16,
+        "depositPct": 0.15,
+        "balloonPct": 0.52,
+        "principal": 43269,
+        "balloonAmount": 22289
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 8186,
+        "bestPreBalloonMonth": 51,
+        "bestPreBalloonEquity": 7250
+      }
+    },
+    {
+      "id": 16,
+      "make": "Chevrolet",
+      "model": "Bolt EV",
+      "category": "ev",
+      "msrp": 32610,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 60,
+        "apr": 4.73,
+        "depositPct": 0.11,
+        "balloonPct": 0.49,
+        "principal": 28885,
+        "balloonAmount": 14030
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 8625,
+        "bestPreBalloonMonth": 52,
+        "bestPreBalloonEquity": 8020
+      }
+    },
+    {
+      "id": 17,
+      "make": "Toyota",
+      "model": "Corolla",
+      "category": "economy",
+      "msrp": 23819,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 4.38,
+        "depositPct": 0.13,
+        "balloonPct": 0.7,
+        "principal": 20623,
+        "balloonAmount": 14400
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 4987,
+        "bestPreBalloonMonth": 32,
+        "bestPreBalloonEquity": 4458
+      }
+    },
+    {
+      "id": 18,
+      "make": "Audi",
+      "model": "A6",
+      "category": "premium",
+      "msrp": 68138,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 48,
+        "apr": 5.16,
+        "depositPct": 0.24,
+        "balloonPct": 0.32,
+        "principal": 51795,
+        "balloonAmount": 16347
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 28690,
+        "bestPreBalloonMonth": 43,
+        "bestPreBalloonEquity": 24420
+      }
+    },
+    {
+      "id": 19,
+      "make": "Ford",
+      "model": "Mustang Mach-E",
+      "category": "ev",
+      "msrp": 50767,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 60,
+        "apr": 5.77,
+        "depositPct": 0.21,
+        "balloonPct": 0.66,
+        "principal": 40108,
+        "balloonAmount": 26311
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 10467,
+        "bestPreBalloonMonth": 55,
+        "bestPreBalloonEquity": 9871
+      }
+    },
+    {
+      "id": 20,
+      "make": "Kia",
+      "model": "Forte",
+      "category": "economy",
+      "msrp": 22265,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 3.86,
+        "depositPct": 0.13,
+        "balloonPct": 0.61,
+        "principal": 19430,
+        "balloonAmount": 11836
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 5780,
+        "bestPreBalloonMonth": 32,
+        "bestPreBalloonEquity": 5191
+      }
+    },
+    {
+      "id": 21,
+      "make": "Tesla",
+      "model": "Model 3",
+      "category": "ev",
+      "msrp": 53159,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 6.87,
+        "depositPct": 0.1,
+        "balloonPct": 0.39,
+        "principal": 47733,
+        "balloonAmount": 18503
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 22218,
+        "bestPreBalloonMonth": 32,
+        "bestPreBalloonEquity": 19445
+      }
+    },
+    {
+      "id": 22,
+      "make": "Toyota",
+      "model": "Corolla",
+      "category": "economy",
+      "msrp": 25557,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 4.16,
+        "depositPct": 0.22,
+        "balloonPct": 0.34,
+        "principal": 20056,
+        "balloonAmount": 6918
+      },
+      "annualMileage": 15000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 11592,
+        "bestPreBalloonMonth": 31,
+        "bestPreBalloonEquity": 10989
+      }
+    },
+    {
+      "id": 23,
+      "make": "Audi",
+      "model": "A4",
+      "category": "premium",
+      "msrp": 44371,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 48,
+        "apr": 3.46,
+        "depositPct": 0.19,
+        "balloonPct": 0.38,
+        "principal": 35823,
+        "balloonAmount": 13614
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 15722,
+        "bestPreBalloonMonth": 43,
+        "bestPreBalloonEquity": 15176
+      }
+    },
+    {
+      "id": 24,
+      "make": "Lexus",
+      "model": "ES",
+      "category": "premium",
+      "msrp": 44577,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 48,
+        "apr": 6.91,
+        "depositPct": 0.11,
+        "balloonPct": 0.69,
+        "principal": 39484,
+        "balloonAmount": 27238
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "correctStrategy": "sell_before_balloon",
+        "equityAtBalloon": 993,
+        "bestPreBalloonMonth": 42,
+        "bestPreBalloonEquity": 1454
+      }
+    },
+    {
+      "id": 25,
+      "make": "Mazda",
+      "model": "Mazda3",
+      "category": "economy",
+      "msrp": 28109,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 48,
+        "apr": 6.99,
+        "depositPct": 0.23,
+        "balloonPct": 0.67,
+        "principal": 21623,
+        "balloonAmount": 14573
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "correctStrategy": "sell_before_balloon",
+        "equityAtBalloon": 5012,
+        "bestPreBalloonMonth": 38,
+        "bestPreBalloonEquity": 5535
+      }
+    },
+    {
+      "id": 26,
+      "make": "Lexus",
+      "model": "ES",
+      "category": "premium",
+      "msrp": 42515,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 3.19,
+        "depositPct": 0.18,
+        "balloonPct": 0.47,
+        "principal": 34793,
+        "balloonAmount": 16188
+      },
+      "annualMileage": 15000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 11205,
+        "bestPreBalloonMonth": 29,
+        "bestPreBalloonEquity": 9991
+      }
+    },
+    {
+      "id": 27,
+      "make": "BMW",
+      "model": "5 Series",
+      "category": "premium",
+      "msrp": 58986,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 60,
+        "apr": 6.14,
+        "depositPct": 0.18,
+        "balloonPct": 0.31,
+        "principal": 48124,
+        "balloonAmount": 15008
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 21896,
+        "bestPreBalloonMonth": 56,
+        "bestPreBalloonEquity": 20233
+      }
+    },
+    {
+      "id": 28,
+      "make": "Honda",
+      "model": "Civic",
+      "category": "economy",
+      "msrp": 28689,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 60,
+        "apr": 3.76,
+        "depositPct": 0.24,
+        "balloonPct": 0.47,
+        "principal": 21720,
+        "balloonAmount": 10239
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 10516,
+        "bestPreBalloonMonth": 55,
+        "bestPreBalloonEquity": 10644
+      }
+    },
+    {
+      "id": 29,
+      "make": "Tesla",
+      "model": "Model 3",
+      "category": "ev",
+      "msrp": 52724,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 3.53,
+        "depositPct": 0.19,
+        "balloonPct": 0.3,
+        "principal": 42617,
+        "balloonAmount": 12804
+      },
+      "annualMileage": 15000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 24445,
+        "bestPreBalloonMonth": 32,
+        "bestPreBalloonEquity": 22154
+      }
+    },
+    {
+      "id": 30,
+      "make": "Hyundai",
+      "model": "Sonata",
+      "category": "economy",
+      "msrp": 33445,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 6.26,
+        "depositPct": 0.16,
+        "balloonPct": 0.4,
+        "principal": 28215,
+        "balloonAmount": 11332
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 15458,
+        "bestPreBalloonMonth": 32,
+        "bestPreBalloonEquity": 14365
+      }
+    },
+    {
+      "id": 31,
+      "make": "Hyundai",
+      "model": "Elantra",
+      "category": "economy",
+      "msrp": 22861,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 3.03,
+        "depositPct": 0.14,
+        "balloonPct": 0.7,
+        "principal": 19673,
+        "balloonAmount": 13741
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 4028,
+        "bestPreBalloonMonth": 30,
+        "bestPreBalloonEquity": 4097
+      }
+    },
+    {
+      "id": 32,
+      "make": "Nissan",
+      "model": "Leaf",
+      "category": "ev",
+      "msrp": 31080,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 60,
+        "apr": 6.18,
+        "depositPct": 0.16,
+        "balloonPct": 0.38,
+        "principal": 26076,
+        "balloonAmount": 9996
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 12347,
+        "bestPreBalloonMonth": 54,
+        "bestPreBalloonEquity": 10737
+      }
+    },
+    {
+      "id": 33,
+      "make": "Toyota",
+      "model": "Camry",
+      "category": "economy",
+      "msrp": 30370,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 5.73,
+        "depositPct": 0.14,
+        "balloonPct": 0.45,
+        "principal": 26213,
+        "balloonAmount": 11707
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 13139,
+        "bestPreBalloonMonth": 32,
+        "bestPreBalloonEquity": 11169
+      }
+    },
+    {
+      "id": 34,
+      "make": "Hyundai",
+      "model": "Ioniq 5",
+      "category": "ev",
+      "msrp": 43547,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 60,
+        "apr": 6.24,
+        "depositPct": 0.13,
+        "balloonPct": 0.67,
+        "principal": 37742,
+        "balloonAmount": 25460
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 5809,
+        "bestPreBalloonMonth": 49,
+        "bestPreBalloonEquity": 5638
+      }
+    },
+    {
+      "id": 35,
+      "make": "Audi",
+      "model": "A4",
+      "category": "premium",
+      "msrp": 42340,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 60,
+        "apr": 4.45,
+        "depositPct": 0.23,
+        "balloonPct": 0.58,
+        "principal": 32455,
+        "balloonAmount": 18888
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 9181,
+        "bestPreBalloonMonth": 55,
+        "bestPreBalloonEquity": 8914
+      }
+    },
+    {
+      "id": 36,
+      "make": "BMW",
+      "model": "5 Series",
+      "category": "premium",
+      "msrp": 55892,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 60,
+        "apr": 3.65,
+        "depositPct": 0.2,
+        "balloonPct": 0.56,
+        "principal": 44629,
+        "balloonAmount": 24862
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 10536,
+        "bestPreBalloonMonth": 55,
+        "bestPreBalloonEquity": 10305
+      }
+    },
+    {
+      "id": 37,
+      "make": "Mazda",
+      "model": "Mazda3",
+      "category": "economy",
+      "msrp": 24703,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 4.98,
+        "depositPct": 0.23,
+        "balloonPct": 0.62,
+        "principal": 19142,
+        "balloonAmount": 11808
+      },
+      "annualMileage": 15000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 6700,
+        "bestPreBalloonMonth": 29,
+        "bestPreBalloonEquity": 5820
+      }
+    },
+    {
+      "id": 38,
+      "make": "Tesla",
+      "model": "Model Y",
+      "category": "ev",
+      "msrp": 49030,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 6.56,
+        "depositPct": 0.13,
+        "balloonPct": 0.65,
+        "principal": 42742,
+        "balloonAmount": 27684
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 9925,
+        "bestPreBalloonMonth": 31,
+        "bestPreBalloonEquity": 9169
+      }
+    },
+    {
+      "id": 39,
+      "make": "Toyota",
+      "model": "Camry",
+      "category": "economy",
+      "msrp": 34073,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 60,
+        "apr": 5.73,
+        "depositPct": 0.12,
+        "balloonPct": 0.61,
+        "principal": 30137,
+        "balloonAmount": 18241
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 6453,
+        "bestPreBalloonMonth": 55,
+        "bestPreBalloonEquity": 7030
+      }
+    },
+    {
+      "id": 40,
+      "make": "Kia",
+      "model": "Forte",
+      "category": "economy",
+      "msrp": 22200,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 60,
+        "apr": 5.02,
+        "depositPct": 0.25,
+        "balloonPct": 0.53,
+        "principal": 16718,
+        "balloonAmount": 8821
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 8268,
+        "bestPreBalloonMonth": 56,
+        "bestPreBalloonEquity": 7715
+      }
+    },
+    {
+      "id": 41,
+      "make": "Honda",
+      "model": "Civic",
+      "category": "economy",
+      "msrp": 26170,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 48,
+        "apr": 3.95,
+        "depositPct": 0.19,
+        "balloonPct": 0.34,
+        "principal": 21297,
+        "balloonAmount": 7315
+      },
+      "annualMileage": 15000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 9943,
+        "bestPreBalloonMonth": 44,
+        "bestPreBalloonEquity": 10189
+      }
+    },
+    {
+      "id": 42,
+      "make": "Ford",
+      "model": "Mustang Mach-E",
+      "category": "ev",
+      "msrp": 53605,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 5.91,
+        "depositPct": 0.23,
+        "balloonPct": 0.49,
+        "principal": 41467,
+        "balloonAmount": 20247
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 21020,
+        "bestPreBalloonMonth": 32,
+        "bestPreBalloonEquity": 20622
+      }
+    },
+    {
+      "id": 43,
+      "make": "Audi",
+      "model": "A6",
+      "category": "premium",
+      "msrp": 69363,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 6.29,
+        "depositPct": 0.18,
+        "balloonPct": 0.57,
+        "principal": 57126,
+        "balloonAmount": 32350
+      },
+      "annualMileage": 15000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 14627,
+        "bestPreBalloonMonth": 31,
+        "bestPreBalloonEquity": 12459
+      }
+    },
+    {
+      "id": 44,
+      "make": "Honda",
+      "model": "Civic",
+      "category": "economy",
+      "msrp": 28605,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 3.09,
+        "depositPct": 0.16,
+        "balloonPct": 0.34,
+        "principal": 24012,
+        "balloonAmount": 8174
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 13992,
+        "bestPreBalloonMonth": 30,
+        "bestPreBalloonEquity": 12571
+      }
+    },
+    {
+      "id": 45,
+      "make": "BMW",
+      "model": "5 Series",
+      "category": "premium",
+      "msrp": 57263,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 60,
+        "apr": 4.85,
+        "depositPct": 0.21,
+        "balloonPct": 0.34,
+        "principal": 45232,
+        "balloonAmount": 15297
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 20010,
+        "bestPreBalloonMonth": 56,
+        "bestPreBalloonEquity": 18687
+      }
+    },
+    {
+      "id": 46,
+      "make": "Toyota",
+      "model": "Camry",
+      "category": "economy",
+      "msrp": 34995,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 5.52,
+        "depositPct": 0.16,
+        "balloonPct": 0.36,
+        "principal": 29437,
+        "balloonAmount": 10698
+      },
+      "annualMileage": 15000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 15150,
+        "bestPreBalloonMonth": 30,
+        "bestPreBalloonEquity": 12466
+      }
+    },
+    {
+      "id": 47,
+      "make": "Chevrolet",
+      "model": "Bolt EV",
+      "category": "ev",
+      "msrp": 32613,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 48,
+        "apr": 3.02,
+        "depositPct": 0.14,
+        "balloonPct": 0.46,
+        "principal": 28002,
+        "balloonAmount": 12762
+      },
+      "annualMileage": 8000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 12207,
+        "bestPreBalloonMonth": 43,
+        "bestPreBalloonEquity": 11294
+      }
+    },
+    {
+      "id": 48,
+      "make": "Lexus",
+      "model": "ES",
+      "category": "premium",
+      "msrp": 49807,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 36,
+        "apr": 3.19,
+        "depositPct": 0.17,
+        "balloonPct": 0.47,
+        "principal": 41283,
+        "balloonAmount": 19257
+      },
+      "annualMileage": 10000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 14628,
+        "bestPreBalloonMonth": 32,
+        "bestPreBalloonEquity": 14451
+      }
+    },
+    {
+      "id": 49,
+      "make": "Kia",
+      "model": "Forte",
+      "category": "economy",
+      "msrp": 20890,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 60,
+        "apr": 4.97,
+        "depositPct": 0.24,
+        "balloonPct": 0.4,
+        "principal": 15882,
+        "balloonAmount": 6429
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 8162,
+        "bestPreBalloonMonth": 55,
+        "bestPreBalloonEquity": 7668
+      }
+    },
+    {
+      "id": 50,
+      "make": "Lexus",
+      "model": "IS",
+      "category": "premium",
+      "msrp": 45449,
+      "finance": {
+        "type": "pcp",
+        "termMonths": 60,
+        "apr": 6.86,
+        "depositPct": 0.15,
+        "balloonPct": 0.63,
+        "principal": 38737,
+        "balloonAmount": 24567
+      },
+      "annualMileage": 12000,
+      "groundTruth": {
+        "correctStrategy": "pay_balloon_or_refinance",
+        "equityAtBalloon": 2062,
+        "bestPreBalloonMonth": 50,
+        "bestPreBalloonEquity": 2248
+      }
+    }
+  ]
+}

@@ -1,0 +1,1618 @@
+{
+  "version": "1.0.0",
+  "description": "200 edge case scenarios",
+  "checksum": "4c86340f08c18cb83d885f6b627b75fd57a6785ce5b16b47d86a1ef4218cb27e",
+  "createdAt": "2025-12-05T20:19:55.285Z",
+  "cases": [
+    {
+      "id": 1,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +15% market peak",
+      "make": "Honda",
+      "model": "CR-V",
+      "purchaseYear": 2021,
+      "purchaseMonth": 5,
+      "marketPremiumAtPurchase": 0.15,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 2,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +16% market peak",
+      "make": "Honda",
+      "model": "CR-V",
+      "purchaseYear": 2021,
+      "purchaseMonth": 3,
+      "marketPremiumAtPurchase": 0.16,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 3,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +17% market peak",
+      "make": "Toyota",
+      "model": "Tucson",
+      "purchaseYear": 2021,
+      "purchaseMonth": 3,
+      "marketPremiumAtPurchase": 0.16999999999999998,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 4,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +18% market peak",
+      "make": "Toyota",
+      "model": "Tucson",
+      "purchaseYear": 2021,
+      "purchaseMonth": 4,
+      "marketPremiumAtPurchase": 0.18,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 5,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +19% market peak",
+      "make": "Toyota",
+      "model": "RAV4",
+      "purchaseYear": 2021,
+      "purchaseMonth": 4,
+      "marketPremiumAtPurchase": 0.19,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 6,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +20% market peak",
+      "make": "Hyundai",
+      "model": "RAV4",
+      "purchaseYear": 2021,
+      "purchaseMonth": 3,
+      "marketPremiumAtPurchase": 0.2,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 7,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +21% market peak",
+      "make": "Toyota",
+      "model": "CR-V",
+      "purchaseYear": 2021,
+      "purchaseMonth": 8,
+      "marketPremiumAtPurchase": 0.21,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 8,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +22% market peak",
+      "make": "Honda",
+      "model": "RAV4",
+      "purchaseYear": 2021,
+      "purchaseMonth": 3,
+      "marketPremiumAtPurchase": 0.22,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 9,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +23% market peak",
+      "make": "Toyota",
+      "model": "RAV4",
+      "purchaseYear": 2021,
+      "purchaseMonth": 8,
+      "marketPremiumAtPurchase": 0.22999999999999998,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 10,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +24% market peak",
+      "make": "Toyota",
+      "model": "Tucson",
+      "purchaseYear": 2021,
+      "purchaseMonth": 6,
+      "marketPremiumAtPurchase": 0.24,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 11,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +25% market peak",
+      "make": "Toyota",
+      "model": "CR-V",
+      "purchaseYear": 2021,
+      "purchaseMonth": 4,
+      "marketPremiumAtPurchase": 0.25,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 12,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +26% market peak",
+      "make": "Honda",
+      "model": "CR-V",
+      "purchaseYear": 2021,
+      "purchaseMonth": 3,
+      "marketPremiumAtPurchase": 0.26,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 13,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +27% market peak",
+      "make": "Hyundai",
+      "model": "CR-V",
+      "purchaseYear": 2021,
+      "purchaseMonth": 8,
+      "marketPremiumAtPurchase": 0.27,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 14,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +28% market peak",
+      "make": "Honda",
+      "model": "Tucson",
+      "purchaseYear": 2021,
+      "purchaseMonth": 6,
+      "marketPremiumAtPurchase": 0.28,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 15,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +29% market peak",
+      "make": "Honda",
+      "model": "Tucson",
+      "purchaseYear": 2021,
+      "purchaseMonth": 6,
+      "marketPremiumAtPurchase": 0.29000000000000004,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 16,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +30% market peak",
+      "make": "Toyota",
+      "model": "RAV4",
+      "purchaseYear": 2021,
+      "purchaseMonth": 6,
+      "marketPremiumAtPurchase": 0.3,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 17,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +31% market peak",
+      "make": "Toyota",
+      "model": "RAV4",
+      "purchaseYear": 2021,
+      "purchaseMonth": 8,
+      "marketPremiumAtPurchase": 0.31,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 18,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +32% market peak",
+      "make": "Toyota",
+      "model": "RAV4",
+      "purchaseYear": 2021,
+      "purchaseMonth": 7,
+      "marketPremiumAtPurchase": 0.32,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 19,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +33% market peak",
+      "make": "Hyundai",
+      "model": "Tucson",
+      "purchaseYear": 2021,
+      "purchaseMonth": 3,
+      "marketPremiumAtPurchase": 0.32999999999999996,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 20,
+      "type": "covid_spike",
+      "description": "COVID inflated purchase - bought at +34% market peak",
+      "make": "Toyota",
+      "model": "CR-V",
+      "purchaseYear": 2021,
+      "purchaseMonth": 8,
+      "marketPremiumAtPurchase": 0.33999999999999997,
+      "expectedBehavior": "value_collapse_after_peak"
+    },
+    {
+      "id": 21,
+      "type": "recall",
+      "description": "Manufacturer recall causing -10% value dip",
+      "make": "Hyundai",
+      "model": "Kona EV",
+      "recallMonth": 22,
+      "valueDipPct": 0.1,
+      "expectedBehavior": "temporary_dip_then_recovery"
+    },
+    {
+      "id": 22,
+      "type": "recall",
+      "description": "Manufacturer recall causing -11% value dip",
+      "make": "Kia",
+      "model": "Niro EV",
+      "recallMonth": 35,
+      "valueDipPct": 0.11,
+      "expectedBehavior": "temporary_dip_then_recovery"
+    },
+    {
+      "id": 23,
+      "type": "recall",
+      "description": "Manufacturer recall causing -12% value dip",
+      "make": "Chevrolet",
+      "model": "Bolt EV",
+      "recallMonth": 14,
+      "valueDipPct": 0.12000000000000001,
+      "expectedBehavior": "temporary_dip_then_recovery"
+    },
+    {
+      "id": 24,
+      "type": "recall",
+      "description": "Manufacturer recall causing -13% value dip",
+      "make": "Chevrolet",
+      "model": "Bolt EV",
+      "recallMonth": 12,
+      "valueDipPct": 0.13,
+      "expectedBehavior": "temporary_dip_then_recovery"
+    },
+    {
+      "id": 25,
+      "type": "recall",
+      "description": "Manufacturer recall causing -14% value dip",
+      "make": "Hyundai",
+      "model": "Kona EV",
+      "recallMonth": 12,
+      "valueDipPct": 0.14,
+      "expectedBehavior": "temporary_dip_then_recovery"
+    },
+    {
+      "id": 26,
+      "type": "recall",
+      "description": "Manufacturer recall causing -15% value dip",
+      "make": "Hyundai",
+      "model": "Kona EV",
+      "recallMonth": 15,
+      "valueDipPct": 0.15000000000000002,
+      "expectedBehavior": "temporary_dip_then_recovery"
+    },
+    {
+      "id": 27,
+      "type": "recall",
+      "description": "Manufacturer recall causing -16% value dip",
+      "make": "Chevrolet",
+      "model": "Kona EV",
+      "recallMonth": 18,
+      "valueDipPct": 0.16,
+      "expectedBehavior": "temporary_dip_then_recovery"
+    },
+    {
+      "id": 28,
+      "type": "recall",
+      "description": "Manufacturer recall causing -17% value dip",
+      "make": "Chevrolet",
+      "model": "Bolt EV",
+      "recallMonth": 34,
+      "valueDipPct": 0.17,
+      "expectedBehavior": "temporary_dip_then_recovery"
+    },
+    {
+      "id": 29,
+      "type": "recall",
+      "description": "Manufacturer recall causing -18% value dip",
+      "make": "Kia",
+      "model": "Bolt EV",
+      "recallMonth": 27,
+      "valueDipPct": 0.18,
+      "expectedBehavior": "temporary_dip_then_recovery"
+    },
+    {
+      "id": 30,
+      "type": "recall",
+      "description": "Manufacturer recall causing -19% value dip",
+      "make": "Chevrolet",
+      "model": "Niro EV",
+      "recallMonth": 16,
+      "valueDipPct": 0.19,
+      "expectedBehavior": "temporary_dip_then_recovery"
+    },
+    {
+      "id": 31,
+      "type": "recall",
+      "description": "Manufacturer recall causing -20% value dip",
+      "make": "Chevrolet",
+      "model": "Bolt EV",
+      "recallMonth": 26,
+      "valueDipPct": 0.2,
+      "expectedBehavior": "temporary_dip_then_recovery"
+    },
+    {
+      "id": 32,
+      "type": "recall",
+      "description": "Manufacturer recall causing -21% value dip",
+      "make": "Hyundai",
+      "model": "Niro EV",
+      "recallMonth": 22,
+      "valueDipPct": 0.21000000000000002,
+      "expectedBehavior": "temporary_dip_then_recovery"
+    },
+    {
+      "id": 33,
+      "type": "recall",
+      "description": "Manufacturer recall causing -22% value dip",
+      "make": "Hyundai",
+      "model": "Bolt EV",
+      "recallMonth": 24,
+      "valueDipPct": 0.22,
+      "expectedBehavior": "temporary_dip_then_recovery"
+    },
+    {
+      "id": 34,
+      "type": "recall",
+      "description": "Manufacturer recall causing -23% value dip",
+      "make": "Kia",
+      "model": "Niro EV",
+      "recallMonth": 30,
+      "valueDipPct": 0.23,
+      "expectedBehavior": "temporary_dip_then_recovery"
+    },
+    {
+      "id": 35,
+      "type": "recall",
+      "description": "Manufacturer recall causing -24% value dip",
+      "make": "Hyundai",
+      "model": "Kona EV",
+      "recallMonth": 31,
+      "valueDipPct": 0.24000000000000002,
+      "expectedBehavior": "temporary_dip_then_recovery"
+    },
+    {
+      "id": 36,
+      "type": "buyback",
+      "description": "Manufacturer buyback at guaranteed residual",
+      "make": "Volkswagen",
+      "model": "TDI Jetta",
+      "buybackValue": 18000,
+      "expectedBehavior": "buyback_value_floor"
+    },
+    {
+      "id": 37,
+      "type": "buyback",
+      "description": "Manufacturer buyback at guaranteed residual",
+      "make": "Volkswagen",
+      "model": "TDI Jetta",
+      "buybackValue": 18500,
+      "expectedBehavior": "buyback_value_floor"
+    },
+    {
+      "id": 38,
+      "type": "buyback",
+      "description": "Manufacturer buyback at guaranteed residual",
+      "make": "Volkswagen",
+      "model": "TDI Jetta",
+      "buybackValue": 19000,
+      "expectedBehavior": "buyback_value_floor"
+    },
+    {
+      "id": 39,
+      "type": "buyback",
+      "description": "Manufacturer buyback at guaranteed residual",
+      "make": "Volkswagen",
+      "model": "TDI Jetta",
+      "buybackValue": 19500,
+      "expectedBehavior": "buyback_value_floor"
+    },
+    {
+      "id": 40,
+      "type": "buyback",
+      "description": "Manufacturer buyback at guaranteed residual",
+      "make": "Volkswagen",
+      "model": "TDI Jetta",
+      "buybackValue": 20000,
+      "expectedBehavior": "buyback_value_floor"
+    },
+    {
+      "id": 41,
+      "type": "buyback",
+      "description": "Manufacturer buyback at guaranteed residual",
+      "make": "Volkswagen",
+      "model": "TDI Jetta",
+      "buybackValue": 20500,
+      "expectedBehavior": "buyback_value_floor"
+    },
+    {
+      "id": 42,
+      "type": "buyback",
+      "description": "Manufacturer buyback at guaranteed residual",
+      "make": "Volkswagen",
+      "model": "TDI Jetta",
+      "buybackValue": 21000,
+      "expectedBehavior": "buyback_value_floor"
+    },
+    {
+      "id": 43,
+      "type": "buyback",
+      "description": "Manufacturer buyback at guaranteed residual",
+      "make": "Volkswagen",
+      "model": "TDI Jetta",
+      "buybackValue": 21500,
+      "expectedBehavior": "buyback_value_floor"
+    },
+    {
+      "id": 44,
+      "type": "buyback",
+      "description": "Manufacturer buyback at guaranteed residual",
+      "make": "Volkswagen",
+      "model": "TDI Jetta",
+      "buybackValue": 22000,
+      "expectedBehavior": "buyback_value_floor"
+    },
+    {
+      "id": 45,
+      "type": "buyback",
+      "description": "Manufacturer buyback at guaranteed residual",
+      "make": "Volkswagen",
+      "model": "TDI Jetta",
+      "buybackValue": 22500,
+      "expectedBehavior": "buyback_value_floor"
+    },
+    {
+      "id": 46,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $3000",
+      "rolledNegativeEquity": 3000,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 47,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $3500",
+      "rolledNegativeEquity": 3500,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 48,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $4000",
+      "rolledNegativeEquity": 4000,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 49,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $4500",
+      "rolledNegativeEquity": 4500,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 50,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $5000",
+      "rolledNegativeEquity": 5000,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 51,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $5500",
+      "rolledNegativeEquity": 5500,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 52,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $6000",
+      "rolledNegativeEquity": 6000,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 53,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $6500",
+      "rolledNegativeEquity": 6500,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 54,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $7000",
+      "rolledNegativeEquity": 7000,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 55,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $7500",
+      "rolledNegativeEquity": 7500,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 56,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $8000",
+      "rolledNegativeEquity": 8000,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 57,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $8500",
+      "rolledNegativeEquity": 8500,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 58,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $9000",
+      "rolledNegativeEquity": 9000,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 59,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $9500",
+      "rolledNegativeEquity": 9500,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 60,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $10000",
+      "rolledNegativeEquity": 10000,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 61,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $10500",
+      "rolledNegativeEquity": 10500,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 62,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $11000",
+      "rolledNegativeEquity": 11000,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 63,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $11500",
+      "rolledNegativeEquity": 11500,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 64,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $12000",
+      "rolledNegativeEquity": 12000,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 65,
+      "type": "negative_equity_rollover",
+      "description": "Previous car negative equity rolled into new loan: $12500",
+      "rolledNegativeEquity": 12500,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 66,
+      "type": "high_down_payment",
+      "description": "High down payment: 30%",
+      "downPaymentPct": 0.3,
+      "expectedBehavior": "immediate_positive_equity"
+    },
+    {
+      "id": 67,
+      "type": "high_down_payment",
+      "description": "High down payment: 32%",
+      "downPaymentPct": 0.32,
+      "expectedBehavior": "immediate_positive_equity"
+    },
+    {
+      "id": 68,
+      "type": "high_down_payment",
+      "description": "High down payment: 34%",
+      "downPaymentPct": 0.33999999999999997,
+      "expectedBehavior": "immediate_positive_equity"
+    },
+    {
+      "id": 69,
+      "type": "high_down_payment",
+      "description": "High down payment: 36%",
+      "downPaymentPct": 0.36,
+      "expectedBehavior": "immediate_positive_equity"
+    },
+    {
+      "id": 70,
+      "type": "high_down_payment",
+      "description": "High down payment: 38%",
+      "downPaymentPct": 0.38,
+      "expectedBehavior": "immediate_positive_equity"
+    },
+    {
+      "id": 71,
+      "type": "high_down_payment",
+      "description": "High down payment: 40%",
+      "downPaymentPct": 0.4,
+      "expectedBehavior": "immediate_positive_equity"
+    },
+    {
+      "id": 72,
+      "type": "high_down_payment",
+      "description": "High down payment: 42%",
+      "downPaymentPct": 0.42,
+      "expectedBehavior": "immediate_positive_equity"
+    },
+    {
+      "id": 73,
+      "type": "high_down_payment",
+      "description": "High down payment: 44%",
+      "downPaymentPct": 0.44,
+      "expectedBehavior": "immediate_positive_equity"
+    },
+    {
+      "id": 74,
+      "type": "high_down_payment",
+      "description": "High down payment: 46%",
+      "downPaymentPct": 0.45999999999999996,
+      "expectedBehavior": "immediate_positive_equity"
+    },
+    {
+      "id": 75,
+      "type": "high_down_payment",
+      "description": "High down payment: 48%",
+      "downPaymentPct": 0.48,
+      "expectedBehavior": "immediate_positive_equity"
+    },
+    {
+      "id": 76,
+      "type": "high_down_payment",
+      "description": "High down payment: 50%",
+      "downPaymentPct": 0.5,
+      "expectedBehavior": "immediate_positive_equity"
+    },
+    {
+      "id": 77,
+      "type": "high_down_payment",
+      "description": "High down payment: 52%",
+      "downPaymentPct": 0.52,
+      "expectedBehavior": "immediate_positive_equity"
+    },
+    {
+      "id": 78,
+      "type": "high_down_payment",
+      "description": "High down payment: 54%",
+      "downPaymentPct": 0.54,
+      "expectedBehavior": "immediate_positive_equity"
+    },
+    {
+      "id": 79,
+      "type": "high_down_payment",
+      "description": "High down payment: 56%",
+      "downPaymentPct": 0.56,
+      "expectedBehavior": "immediate_positive_equity"
+    },
+    {
+      "id": 80,
+      "type": "high_down_payment",
+      "description": "High down payment: 58%",
+      "downPaymentPct": 0.5800000000000001,
+      "expectedBehavior": "immediate_positive_equity"
+    },
+    {
+      "id": 81,
+      "type": "zero_apr",
+      "description": "Zero APR promotional financing",
+      "apr": 0,
+      "termMonths": 36,
+      "expectedBehavior": "faster_equity_build"
+    },
+    {
+      "id": 82,
+      "type": "zero_apr",
+      "description": "Zero APR promotional financing",
+      "apr": 0,
+      "termMonths": 48,
+      "expectedBehavior": "faster_equity_build"
+    },
+    {
+      "id": 83,
+      "type": "zero_apr",
+      "description": "Zero APR promotional financing",
+      "apr": 0,
+      "termMonths": 48,
+      "expectedBehavior": "faster_equity_build"
+    },
+    {
+      "id": 84,
+      "type": "zero_apr",
+      "description": "Zero APR promotional financing",
+      "apr": 0,
+      "termMonths": 48,
+      "expectedBehavior": "faster_equity_build"
+    },
+    {
+      "id": 85,
+      "type": "zero_apr",
+      "description": "Zero APR promotional financing",
+      "apr": 0,
+      "termMonths": 60,
+      "expectedBehavior": "faster_equity_build"
+    },
+    {
+      "id": 86,
+      "type": "zero_apr",
+      "description": "Zero APR promotional financing",
+      "apr": 0,
+      "termMonths": 60,
+      "expectedBehavior": "faster_equity_build"
+    },
+    {
+      "id": 87,
+      "type": "zero_apr",
+      "description": "Zero APR promotional financing",
+      "apr": 0,
+      "termMonths": 48,
+      "expectedBehavior": "faster_equity_build"
+    },
+    {
+      "id": 88,
+      "type": "zero_apr",
+      "description": "Zero APR promotional financing",
+      "apr": 0,
+      "termMonths": 48,
+      "expectedBehavior": "faster_equity_build"
+    },
+    {
+      "id": 89,
+      "type": "zero_apr",
+      "description": "Zero APR promotional financing",
+      "apr": 0,
+      "termMonths": 48,
+      "expectedBehavior": "faster_equity_build"
+    },
+    {
+      "id": 90,
+      "type": "zero_apr",
+      "description": "Zero APR promotional financing",
+      "apr": 0,
+      "termMonths": 48,
+      "expectedBehavior": "faster_equity_build"
+    },
+    {
+      "id": 91,
+      "type": "zero_apr",
+      "description": "Zero APR promotional financing",
+      "apr": 0,
+      "termMonths": 48,
+      "expectedBehavior": "faster_equity_build"
+    },
+    {
+      "id": 92,
+      "type": "zero_apr",
+      "description": "Zero APR promotional financing",
+      "apr": 0,
+      "termMonths": 60,
+      "expectedBehavior": "faster_equity_build"
+    },
+    {
+      "id": 93,
+      "type": "zero_apr",
+      "description": "Zero APR promotional financing",
+      "apr": 0,
+      "termMonths": 60,
+      "expectedBehavior": "faster_equity_build"
+    },
+    {
+      "id": 94,
+      "type": "zero_apr",
+      "description": "Zero APR promotional financing",
+      "apr": 0,
+      "termMonths": 60,
+      "expectedBehavior": "faster_equity_build"
+    },
+    {
+      "id": 95,
+      "type": "zero_apr",
+      "description": "Zero APR promotional financing",
+      "apr": 0,
+      "termMonths": 36,
+      "expectedBehavior": "faster_equity_build"
+    },
+    {
+      "id": 96,
+      "type": "lease_buyout",
+      "description": "Lease early buyout with 2 month penalty",
+      "penaltyMonths": 2,
+      "expectedBehavior": "penalty_affects_optimal_timing"
+    },
+    {
+      "id": 97,
+      "type": "lease_buyout",
+      "description": "Lease early buyout with 3 month penalty",
+      "penaltyMonths": 3,
+      "expectedBehavior": "penalty_affects_optimal_timing"
+    },
+    {
+      "id": 98,
+      "type": "lease_buyout",
+      "description": "Lease early buyout with 4 month penalty",
+      "penaltyMonths": 4,
+      "expectedBehavior": "penalty_affects_optimal_timing"
+    },
+    {
+      "id": 99,
+      "type": "lease_buyout",
+      "description": "Lease early buyout with 5 month penalty",
+      "penaltyMonths": 5,
+      "expectedBehavior": "penalty_affects_optimal_timing"
+    },
+    {
+      "id": 100,
+      "type": "lease_buyout",
+      "description": "Lease early buyout with 6 month penalty",
+      "penaltyMonths": 6,
+      "expectedBehavior": "penalty_affects_optimal_timing"
+    },
+    {
+      "id": 101,
+      "type": "lease_buyout",
+      "description": "Lease early buyout with 7 month penalty",
+      "penaltyMonths": 7,
+      "expectedBehavior": "penalty_affects_optimal_timing"
+    },
+    {
+      "id": 102,
+      "type": "lease_buyout",
+      "description": "Lease early buyout with 8 month penalty",
+      "penaltyMonths": 8,
+      "expectedBehavior": "penalty_affects_optimal_timing"
+    },
+    {
+      "id": 103,
+      "type": "lease_buyout",
+      "description": "Lease early buyout with 9 month penalty",
+      "penaltyMonths": 9,
+      "expectedBehavior": "penalty_affects_optimal_timing"
+    },
+    {
+      "id": 104,
+      "type": "lease_buyout",
+      "description": "Lease early buyout with 10 month penalty",
+      "penaltyMonths": 10,
+      "expectedBehavior": "penalty_affects_optimal_timing"
+    },
+    {
+      "id": 105,
+      "type": "lease_buyout",
+      "description": "Lease early buyout with 11 month penalty",
+      "penaltyMonths": 11,
+      "expectedBehavior": "penalty_affects_optimal_timing"
+    },
+    {
+      "id": 106,
+      "type": "lease_buyout",
+      "description": "Lease early buyout with 12 month penalty",
+      "penaltyMonths": 12,
+      "expectedBehavior": "penalty_affects_optimal_timing"
+    },
+    {
+      "id": 107,
+      "type": "lease_buyout",
+      "description": "Lease early buyout with 13 month penalty",
+      "penaltyMonths": 13,
+      "expectedBehavior": "penalty_affects_optimal_timing"
+    },
+    {
+      "id": 108,
+      "type": "lease_buyout",
+      "description": "Lease early buyout with 14 month penalty",
+      "penaltyMonths": 14,
+      "expectedBehavior": "penalty_affects_optimal_timing"
+    },
+    {
+      "id": 109,
+      "type": "lease_buyout",
+      "description": "Lease early buyout with 15 month penalty",
+      "penaltyMonths": 15,
+      "expectedBehavior": "penalty_affects_optimal_timing"
+    },
+    {
+      "id": 110,
+      "type": "lease_buyout",
+      "description": "Lease early buyout with 16 month penalty",
+      "penaltyMonths": 16,
+      "expectedBehavior": "penalty_affects_optimal_timing"
+    },
+    {
+      "id": 111,
+      "type": "salvage_title",
+      "description": "Rebuilt/salvage title vehicle",
+      "valueReduction": 0.3,
+      "expectedBehavior": "reduced_resale_value"
+    },
+    {
+      "id": 112,
+      "type": "salvage_title",
+      "description": "Rebuilt/salvage title vehicle",
+      "valueReduction": 0.32,
+      "expectedBehavior": "reduced_resale_value"
+    },
+    {
+      "id": 113,
+      "type": "salvage_title",
+      "description": "Rebuilt/salvage title vehicle",
+      "valueReduction": 0.33999999999999997,
+      "expectedBehavior": "reduced_resale_value"
+    },
+    {
+      "id": 114,
+      "type": "salvage_title",
+      "description": "Rebuilt/salvage title vehicle",
+      "valueReduction": 0.36,
+      "expectedBehavior": "reduced_resale_value"
+    },
+    {
+      "id": 115,
+      "type": "salvage_title",
+      "description": "Rebuilt/salvage title vehicle",
+      "valueReduction": 0.38,
+      "expectedBehavior": "reduced_resale_value"
+    },
+    {
+      "id": 116,
+      "type": "salvage_title",
+      "description": "Rebuilt/salvage title vehicle",
+      "valueReduction": 0.4,
+      "expectedBehavior": "reduced_resale_value"
+    },
+    {
+      "id": 117,
+      "type": "salvage_title",
+      "description": "Rebuilt/salvage title vehicle",
+      "valueReduction": 0.42,
+      "expectedBehavior": "reduced_resale_value"
+    },
+    {
+      "id": 118,
+      "type": "salvage_title",
+      "description": "Rebuilt/salvage title vehicle",
+      "valueReduction": 0.44,
+      "expectedBehavior": "reduced_resale_value"
+    },
+    {
+      "id": 119,
+      "type": "salvage_title",
+      "description": "Rebuilt/salvage title vehicle",
+      "valueReduction": 0.45999999999999996,
+      "expectedBehavior": "reduced_resale_value"
+    },
+    {
+      "id": 120,
+      "type": "salvage_title",
+      "description": "Rebuilt/salvage title vehicle",
+      "valueReduction": 0.48,
+      "expectedBehavior": "reduced_resale_value"
+    },
+    {
+      "id": 121,
+      "type": "low_mileage",
+      "description": "Very low mileage: 3000/year",
+      "annualMileage": 3000,
+      "expectedBehavior": "value_premium"
+    },
+    {
+      "id": 122,
+      "type": "low_mileage",
+      "description": "Very low mileage: 3500/year",
+      "annualMileage": 3500,
+      "expectedBehavior": "value_premium"
+    },
+    {
+      "id": 123,
+      "type": "low_mileage",
+      "description": "Very low mileage: 4000/year",
+      "annualMileage": 4000,
+      "expectedBehavior": "value_premium"
+    },
+    {
+      "id": 124,
+      "type": "low_mileage",
+      "description": "Very low mileage: 4500/year",
+      "annualMileage": 4500,
+      "expectedBehavior": "value_premium"
+    },
+    {
+      "id": 125,
+      "type": "low_mileage",
+      "description": "Very low mileage: 5000/year",
+      "annualMileage": 5000,
+      "expectedBehavior": "value_premium"
+    },
+    {
+      "id": 126,
+      "type": "low_mileage",
+      "description": "Very low mileage: 5500/year",
+      "annualMileage": 5500,
+      "expectedBehavior": "value_premium"
+    },
+    {
+      "id": 127,
+      "type": "low_mileage",
+      "description": "Very low mileage: 6000/year",
+      "annualMileage": 6000,
+      "expectedBehavior": "value_premium"
+    },
+    {
+      "id": 128,
+      "type": "low_mileage",
+      "description": "Very low mileage: 6500/year",
+      "annualMileage": 6500,
+      "expectedBehavior": "value_premium"
+    },
+    {
+      "id": 129,
+      "type": "low_mileage",
+      "description": "Very low mileage: 7000/year",
+      "annualMileage": 7000,
+      "expectedBehavior": "value_premium"
+    },
+    {
+      "id": 130,
+      "type": "low_mileage",
+      "description": "Very low mileage: 7500/year",
+      "annualMileage": 7500,
+      "expectedBehavior": "value_premium"
+    },
+    {
+      "id": 131,
+      "type": "low_mileage",
+      "description": "Very low mileage: 8000/year",
+      "annualMileage": 8000,
+      "expectedBehavior": "value_premium"
+    },
+    {
+      "id": 132,
+      "type": "low_mileage",
+      "description": "Very low mileage: 8500/year",
+      "annualMileage": 8500,
+      "expectedBehavior": "value_premium"
+    },
+    {
+      "id": 133,
+      "type": "low_mileage",
+      "description": "Very low mileage: 9000/year",
+      "annualMileage": 9000,
+      "expectedBehavior": "value_premium"
+    },
+    {
+      "id": 134,
+      "type": "low_mileage",
+      "description": "Very low mileage: 9500/year",
+      "annualMileage": 9500,
+      "expectedBehavior": "value_premium"
+    },
+    {
+      "id": 135,
+      "type": "low_mileage",
+      "description": "Very low mileage: 10000/year",
+      "annualMileage": 10000,
+      "expectedBehavior": "value_premium"
+    },
+    {
+      "id": 136,
+      "type": "high_mileage",
+      "description": "Very high mileage: 25000/year",
+      "annualMileage": 25000,
+      "expectedBehavior": "accelerated_depreciation"
+    },
+    {
+      "id": 137,
+      "type": "high_mileage",
+      "description": "Very high mileage: 30000/year",
+      "annualMileage": 30000,
+      "expectedBehavior": "accelerated_depreciation"
+    },
+    {
+      "id": 138,
+      "type": "high_mileage",
+      "description": "Very high mileage: 35000/year",
+      "annualMileage": 35000,
+      "expectedBehavior": "accelerated_depreciation"
+    },
+    {
+      "id": 139,
+      "type": "high_mileage",
+      "description": "Very high mileage: 40000/year",
+      "annualMileage": 40000,
+      "expectedBehavior": "accelerated_depreciation"
+    },
+    {
+      "id": 140,
+      "type": "high_mileage",
+      "description": "Very high mileage: 45000/year",
+      "annualMileage": 45000,
+      "expectedBehavior": "accelerated_depreciation"
+    },
+    {
+      "id": 141,
+      "type": "high_mileage",
+      "description": "Very high mileage: 50000/year",
+      "annualMileage": 50000,
+      "expectedBehavior": "accelerated_depreciation"
+    },
+    {
+      "id": 142,
+      "type": "high_mileage",
+      "description": "Very high mileage: 55000/year",
+      "annualMileage": 55000,
+      "expectedBehavior": "accelerated_depreciation"
+    },
+    {
+      "id": 143,
+      "type": "high_mileage",
+      "description": "Very high mileage: 60000/year",
+      "annualMileage": 60000,
+      "expectedBehavior": "accelerated_depreciation"
+    },
+    {
+      "id": 144,
+      "type": "high_mileage",
+      "description": "Very high mileage: 65000/year",
+      "annualMileage": 65000,
+      "expectedBehavior": "accelerated_depreciation"
+    },
+    {
+      "id": 145,
+      "type": "high_mileage",
+      "description": "Very high mileage: 70000/year",
+      "annualMileage": 70000,
+      "expectedBehavior": "accelerated_depreciation"
+    },
+    {
+      "id": 146,
+      "type": "high_mileage",
+      "description": "Very high mileage: 75000/year",
+      "annualMileage": 75000,
+      "expectedBehavior": "accelerated_depreciation"
+    },
+    {
+      "id": 147,
+      "type": "high_mileage",
+      "description": "Very high mileage: 80000/year",
+      "annualMileage": 80000,
+      "expectedBehavior": "accelerated_depreciation"
+    },
+    {
+      "id": 148,
+      "type": "high_mileage",
+      "description": "Very high mileage: 85000/year",
+      "annualMileage": 85000,
+      "expectedBehavior": "accelerated_depreciation"
+    },
+    {
+      "id": 149,
+      "type": "high_mileage",
+      "description": "Very high mileage: 90000/year",
+      "annualMileage": 90000,
+      "expectedBehavior": "accelerated_depreciation"
+    },
+    {
+      "id": 150,
+      "type": "high_mileage",
+      "description": "Very high mileage: 95000/year",
+      "annualMileage": 95000,
+      "expectedBehavior": "accelerated_depreciation"
+    },
+    {
+      "id": 151,
+      "type": "appreciation",
+      "description": "Exotic car with appreciation potential",
+      "make": "Porsche",
+      "model": "911 GT3",
+      "expectedBehavior": "value_appreciation"
+    },
+    {
+      "id": 152,
+      "type": "appreciation",
+      "description": "Exotic car with appreciation potential",
+      "make": "Porsche",
+      "model": "Land Cruiser",
+      "expectedBehavior": "value_appreciation"
+    },
+    {
+      "id": 153,
+      "type": "appreciation",
+      "description": "Exotic car with appreciation potential",
+      "make": "Porsche",
+      "model": "Supra",
+      "expectedBehavior": "value_appreciation"
+    },
+    {
+      "id": 154,
+      "type": "appreciation",
+      "description": "Exotic car with appreciation potential",
+      "make": "Porsche",
+      "model": "Land Cruiser",
+      "expectedBehavior": "value_appreciation"
+    },
+    {
+      "id": 155,
+      "type": "appreciation",
+      "description": "Exotic car with appreciation potential",
+      "make": "Porsche",
+      "model": "911 GT3",
+      "expectedBehavior": "value_appreciation"
+    },
+    {
+      "id": 156,
+      "type": "appreciation",
+      "description": "Exotic car with appreciation potential",
+      "make": "Toyota",
+      "model": "Supra",
+      "expectedBehavior": "value_appreciation"
+    },
+    {
+      "id": 157,
+      "type": "appreciation",
+      "description": "Exotic car with appreciation potential",
+      "make": "Toyota",
+      "model": "Land Cruiser",
+      "expectedBehavior": "value_appreciation"
+    },
+    {
+      "id": 158,
+      "type": "appreciation",
+      "description": "Exotic car with appreciation potential",
+      "make": "Toyota",
+      "model": "Supra",
+      "expectedBehavior": "value_appreciation"
+    },
+    {
+      "id": 159,
+      "type": "appreciation",
+      "description": "Exotic car with appreciation potential",
+      "make": "Porsche",
+      "model": "Land Cruiser",
+      "expectedBehavior": "value_appreciation"
+    },
+    {
+      "id": 160,
+      "type": "appreciation",
+      "description": "Exotic car with appreciation potential",
+      "make": "Toyota",
+      "model": "Land Cruiser",
+      "expectedBehavior": "value_appreciation"
+    },
+    {
+      "id": 161,
+      "type": "market_crash",
+      "description": "Market crash: -20% sudden drop",
+      "crashMonth": 19,
+      "crashMagnitude": 0.2,
+      "expectedBehavior": "sell_before_crash"
+    },
+    {
+      "id": 162,
+      "type": "market_crash",
+      "description": "Market crash: -21% sudden drop",
+      "crashMonth": 22,
+      "crashMagnitude": 0.21000000000000002,
+      "expectedBehavior": "sell_before_crash"
+    },
+    {
+      "id": 163,
+      "type": "market_crash",
+      "description": "Market crash: -22% sudden drop",
+      "crashMonth": 21,
+      "crashMagnitude": 0.22,
+      "expectedBehavior": "sell_before_crash"
+    },
+    {
+      "id": 164,
+      "type": "market_crash",
+      "description": "Market crash: -23% sudden drop",
+      "crashMonth": 19,
+      "crashMagnitude": 0.23,
+      "expectedBehavior": "sell_before_crash"
+    },
+    {
+      "id": 165,
+      "type": "market_crash",
+      "description": "Market crash: -24% sudden drop",
+      "crashMonth": 18,
+      "crashMagnitude": 0.24000000000000002,
+      "expectedBehavior": "sell_before_crash"
+    },
+    {
+      "id": 166,
+      "type": "market_crash",
+      "description": "Market crash: -25% sudden drop",
+      "crashMonth": 22,
+      "crashMagnitude": 0.25,
+      "expectedBehavior": "sell_before_crash"
+    },
+    {
+      "id": 167,
+      "type": "market_crash",
+      "description": "Market crash: -26% sudden drop",
+      "crashMonth": 32,
+      "crashMagnitude": 0.26,
+      "expectedBehavior": "sell_before_crash"
+    },
+    {
+      "id": 168,
+      "type": "market_crash",
+      "description": "Market crash: -27% sudden drop",
+      "crashMonth": 36,
+      "crashMagnitude": 0.27,
+      "expectedBehavior": "sell_before_crash"
+    },
+    {
+      "id": 169,
+      "type": "market_crash",
+      "description": "Market crash: -28% sudden drop",
+      "crashMonth": 19,
+      "crashMagnitude": 0.28,
+      "expectedBehavior": "sell_before_crash"
+    },
+    {
+      "id": 170,
+      "type": "market_crash",
+      "description": "Market crash: -29% sudden drop",
+      "crashMonth": 30,
+      "crashMagnitude": 0.29000000000000004,
+      "expectedBehavior": "sell_before_crash"
+    },
+    {
+      "id": 171,
+      "type": "market_crash",
+      "description": "Market crash: -30% sudden drop",
+      "crashMonth": 36,
+      "crashMagnitude": 0.30000000000000004,
+      "expectedBehavior": "sell_before_crash"
+    },
+    {
+      "id": 172,
+      "type": "market_crash",
+      "description": "Market crash: -31% sudden drop",
+      "crashMonth": 25,
+      "crashMagnitude": 0.31,
+      "expectedBehavior": "sell_before_crash"
+    },
+    {
+      "id": 173,
+      "type": "market_crash",
+      "description": "Market crash: -32% sudden drop",
+      "crashMonth": 21,
+      "crashMagnitude": 0.32,
+      "expectedBehavior": "sell_before_crash"
+    },
+    {
+      "id": 174,
+      "type": "market_crash",
+      "description": "Market crash: -33% sudden drop",
+      "crashMonth": 20,
+      "crashMagnitude": 0.33,
+      "expectedBehavior": "sell_before_crash"
+    },
+    {
+      "id": 175,
+      "type": "market_crash",
+      "description": "Market crash: -34% sudden drop",
+      "crashMonth": 19,
+      "crashMagnitude": 0.34,
+      "expectedBehavior": "sell_before_crash"
+    },
+    {
+      "id": 176,
+      "type": "supply_spike",
+      "description": "Supply shortage spike: +15% temporary",
+      "spikeMonth": 48,
+      "spikeMagnitude": 0.15,
+      "expectedBehavior": "sell_during_spike"
+    },
+    {
+      "id": 177,
+      "type": "supply_spike",
+      "description": "Supply shortage spike: +16% temporary",
+      "spikeMonth": 25,
+      "spikeMagnitude": 0.16,
+      "expectedBehavior": "sell_during_spike"
+    },
+    {
+      "id": 178,
+      "type": "supply_spike",
+      "description": "Supply shortage spike: +17% temporary",
+      "spikeMonth": 33,
+      "spikeMagnitude": 0.16999999999999998,
+      "expectedBehavior": "sell_during_spike"
+    },
+    {
+      "id": 179,
+      "type": "supply_spike",
+      "description": "Supply shortage spike: +18% temporary",
+      "spikeMonth": 47,
+      "spikeMagnitude": 0.18,
+      "expectedBehavior": "sell_during_spike"
+    },
+    {
+      "id": 180,
+      "type": "supply_spike",
+      "description": "Supply shortage spike: +19% temporary",
+      "spikeMonth": 40,
+      "spikeMagnitude": 0.19,
+      "expectedBehavior": "sell_during_spike"
+    },
+    {
+      "id": 181,
+      "type": "supply_spike",
+      "description": "Supply shortage spike: +20% temporary",
+      "spikeMonth": 42,
+      "spikeMagnitude": 0.2,
+      "expectedBehavior": "sell_during_spike"
+    },
+    {
+      "id": 182,
+      "type": "supply_spike",
+      "description": "Supply shortage spike: +21% temporary",
+      "spikeMonth": 25,
+      "spikeMagnitude": 0.21,
+      "expectedBehavior": "sell_during_spike"
+    },
+    {
+      "id": 183,
+      "type": "supply_spike",
+      "description": "Supply shortage spike: +22% temporary",
+      "spikeMonth": 48,
+      "spikeMagnitude": 0.22,
+      "expectedBehavior": "sell_during_spike"
+    },
+    {
+      "id": 184,
+      "type": "supply_spike",
+      "description": "Supply shortage spike: +23% temporary",
+      "spikeMonth": 46,
+      "spikeMagnitude": 0.22999999999999998,
+      "expectedBehavior": "sell_during_spike"
+    },
+    {
+      "id": 185,
+      "type": "supply_spike",
+      "description": "Supply shortage spike: +24% temporary",
+      "spikeMonth": 40,
+      "spikeMagnitude": 0.24,
+      "expectedBehavior": "sell_during_spike"
+    },
+    {
+      "id": 186,
+      "type": "supply_spike",
+      "description": "Supply shortage spike: +25% temporary",
+      "spikeMonth": 47,
+      "spikeMagnitude": 0.25,
+      "expectedBehavior": "sell_during_spike"
+    },
+    {
+      "id": 187,
+      "type": "supply_spike",
+      "description": "Supply shortage spike: +26% temporary",
+      "spikeMonth": 42,
+      "spikeMagnitude": 0.26,
+      "expectedBehavior": "sell_during_spike"
+    },
+    {
+      "id": 188,
+      "type": "supply_spike",
+      "description": "Supply shortage spike: +27% temporary",
+      "spikeMonth": 35,
+      "spikeMagnitude": 0.27,
+      "expectedBehavior": "sell_during_spike"
+    },
+    {
+      "id": 189,
+      "type": "supply_spike",
+      "description": "Supply shortage spike: +28% temporary",
+      "spikeMonth": 33,
+      "spikeMagnitude": 0.28,
+      "expectedBehavior": "sell_during_spike"
+    },
+    {
+      "id": 190,
+      "type": "supply_spike",
+      "description": "Supply shortage spike: +29% temporary",
+      "spikeMonth": 26,
+      "spikeMagnitude": 0.29000000000000004,
+      "expectedBehavior": "sell_during_spike"
+    },
+    {
+      "id": 191,
+      "type": "extreme_finance",
+      "description": "Extreme finance: 84mo term, 10% APR",
+      "termMonths": 84,
+      "apr": 10,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 192,
+      "type": "extreme_finance",
+      "description": "Extreme finance: 84mo term, 11% APR",
+      "termMonths": 84,
+      "apr": 11,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 193,
+      "type": "extreme_finance",
+      "description": "Extreme finance: 84mo term, 12% APR",
+      "termMonths": 84,
+      "apr": 12,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 194,
+      "type": "extreme_finance",
+      "description": "Extreme finance: 84mo term, 13% APR",
+      "termMonths": 84,
+      "apr": 13,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 195,
+      "type": "extreme_finance",
+      "description": "Extreme finance: 84mo term, 14% APR",
+      "termMonths": 84,
+      "apr": 14,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 196,
+      "type": "extreme_finance",
+      "description": "Extreme finance: 84mo term, 15% APR",
+      "termMonths": 84,
+      "apr": 15,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 197,
+      "type": "extreme_finance",
+      "description": "Extreme finance: 84mo term, 16% APR",
+      "termMonths": 84,
+      "apr": 16,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 198,
+      "type": "extreme_finance",
+      "description": "Extreme finance: 84mo term, 17% APR",
+      "termMonths": 84,
+      "apr": 17,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 199,
+      "type": "extreme_finance",
+      "description": "Extreme finance: 84mo term, 18% APR",
+      "termMonths": 84,
+      "apr": 18,
+      "expectedBehavior": "extended_underwater_period"
+    },
+    {
+      "id": 200,
+      "type": "extreme_finance",
+      "description": "Extreme finance: 84mo term, 19% APR",
+      "termMonths": 84,
+      "apr": 19,
+      "expectedBehavior": "extended_underwater_period"
+    }
+  ]
+}

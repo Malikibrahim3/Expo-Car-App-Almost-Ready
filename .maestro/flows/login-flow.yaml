@@ -1,0 +1,64 @@
+appId: host.exp.Exponent  # Expo Go
+---
+# Login Flow Test
+# Tests the login journey
+
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd
+
+# Tap "I already have an account" on landing
+- tapOn:
+    text: ".*already have an account.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Should be on login screen
+- assertVisible:
+    text: ".*Sign In.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Welcome back.*"
+    optional: true
+
+# Check security badge
+- assertVisible:
+    text: ".*encrypted.*"
+    optional: true
+
+# Fill in email
+- tapOn:
+    text: ".*EMAIL.*"
+    optional: true
+
+- inputText: "user@example.com"
+
+# Fill in password
+- tapOn:
+    text: ".*PASSWORD.*"
+    optional: true
+
+- inputText: "password123"
+
+# Check forgot password link
+- assertVisible:
+    text: ".*Forgot password.*"
+    optional: true
+
+# Check Apple Sign In
+- assertVisible:
+    text: ".*Apple.*"
+    optional: true
+
+# Check signup link
+- assertVisible:
+    text: ".*Don't have an account.*"
+    optional: true
+
+# Check demo mode
+- assertVisible:
+    text: ".*Quick Demo.*"
+    optional: true

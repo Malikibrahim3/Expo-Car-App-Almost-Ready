@@ -1,0 +1,505 @@
+{
+  "createdAt": "2025-12-05T20:19:55.342Z",
+  "predictions": [
+    {
+      "id": 1,
+      "optimalMonth": 69,
+      "equity": 20541
+    },
+    {
+      "id": 2,
+      "optimalMonth": 57,
+      "equity": 14591
+    },
+    {
+      "id": 3,
+      "optimalMonth": 45,
+      "equity": 15671
+    },
+    {
+      "id": 4,
+      "optimalMonth": 44,
+      "equity": 16855
+    },
+    {
+      "id": 5,
+      "optimalMonth": 69,
+      "equity": 11200
+    },
+    {
+      "id": 6,
+      "optimalMonth": 33,
+      "equity": 17948
+    },
+    {
+      "id": 7,
+      "optimalMonth": 55,
+      "equity": 4104
+    },
+    {
+      "id": 8,
+      "optimalMonth": 57,
+      "equity": 3164
+    },
+    {
+      "id": 9,
+      "optimalMonth": 45,
+      "equity": 9611
+    },
+    {
+      "id": 10,
+      "optimalMonth": 45,
+      "equity": 20029
+    },
+    {
+      "id": 11,
+      "optimalMonth": 57,
+      "equity": 17199
+    },
+    {
+      "id": 12,
+      "optimalMonth": 55,
+      "equity": 6508
+    },
+    {
+      "id": 13,
+      "optimalMonth": 56,
+      "equity": 2945
+    },
+    {
+      "id": 14,
+      "optimalMonth": 57,
+      "equity": 13653
+    },
+    {
+      "id": 15,
+      "optimalMonth": 33,
+      "equity": 20522
+    },
+    {
+      "id": 16,
+      "optimalMonth": 57,
+      "equity": 16005
+    },
+    {
+      "id": 17,
+      "optimalMonth": 57,
+      "equity": 22357
+    },
+    {
+      "id": 18,
+      "optimalMonth": 69,
+      "equity": 16693
+    },
+    {
+      "id": 19,
+      "optimalMonth": 57,
+      "equity": 12611
+    },
+    {
+      "id": 20,
+      "optimalMonth": 33,
+      "equity": 17647
+    },
+    {
+      "id": 21,
+      "optimalMonth": 33,
+      "equity": 17042
+    },
+    {
+      "id": 22,
+      "optimalMonth": 45,
+      "equity": 15258
+    },
+    {
+      "id": 23,
+      "optimalMonth": 56,
+      "equity": 6744
+    },
+    {
+      "id": 24,
+      "optimalMonth": 57,
+      "equity": 20479
+    },
+    {
+      "id": 25,
+      "optimalMonth": 69,
+      "equity": 17504
+    },
+    {
+      "id": 26,
+      "optimalMonth": 57,
+      "equity": 11964
+    },
+    {
+      "id": 27,
+      "optimalMonth": 69,
+      "equity": 13141
+    },
+    {
+      "id": 28,
+      "optimalMonth": 57,
+      "equity": 7563
+    },
+    {
+      "id": 29,
+      "optimalMonth": 45,
+      "equity": 19737
+    },
+    {
+      "id": 30,
+      "optimalMonth": 69,
+      "equity": 22199
+    },
+    {
+      "id": 31,
+      "optimalMonth": 33,
+      "equity": 32328
+    },
+    {
+      "id": 32,
+      "optimalMonth": 45,
+      "equity": 21082
+    },
+    {
+      "id": 33,
+      "optimalMonth": 33,
+      "equity": 43995
+    },
+    {
+      "id": 34,
+      "optimalMonth": 69,
+      "equity": 23859
+    },
+    {
+      "id": 35,
+      "optimalMonth": 57,
+      "equity": 28494
+    },
+    {
+      "id": 36,
+      "optimalMonth": 57,
+      "equity": 28278
+    },
+    {
+      "id": 37,
+      "optimalMonth": 45,
+      "equity": 9543
+    },
+    {
+      "id": 38,
+      "optimalMonth": 69,
+      "equity": 27314
+    },
+    {
+      "id": 39,
+      "optimalMonth": 55,
+      "equity": 11803
+    },
+    {
+      "id": 40,
+      "optimalMonth": 57,
+      "equity": 7879
+    },
+    {
+      "id": 41,
+      "optimalMonth": 45,
+      "equity": 36149
+    },
+    {
+      "id": 42,
+      "optimalMonth": 33,
+      "equity": 35262
+    },
+    {
+      "id": 43,
+      "optimalMonth": 45,
+      "equity": 36813
+    },
+    {
+      "id": 44,
+      "optimalMonth": 69,
+      "equity": 30412
+    },
+    {
+      "id": 45,
+      "optimalMonth": 69,
+      "equity": 17870
+    },
+    {
+      "id": 46,
+      "optimalMonth": 69,
+      "equity": 29611
+    },
+    {
+      "id": 47,
+      "optimalMonth": 57,
+      "equity": 11214
+    },
+    {
+      "id": 48,
+      "optimalMonth": 57,
+      "equity": 8326
+    },
+    {
+      "id": 49,
+      "optimalMonth": 69,
+      "equity": 35863
+    },
+    {
+      "id": 50,
+      "optimalMonth": 57,
+      "equity": 35508
+    },
+    {
+      "id": 51,
+      "optimalMonth": 45,
+      "equity": 29130
+    },
+    {
+      "id": 52,
+      "optimalMonth": 69,
+      "equity": 29467
+    },
+    {
+      "id": 53,
+      "optimalMonth": 33,
+      "equity": 28596
+    },
+    {
+      "id": 54,
+      "optimalMonth": 57,
+      "equity": 30909
+    },
+    {
+      "id": 55,
+      "optimalMonth": 33,
+      "equity": 33027
+    },
+    {
+      "id": 56,
+      "optimalMonth": 45,
+      "equity": 20815
+    },
+    {
+      "id": 57,
+      "optimalMonth": 57,
+      "equity": 18323
+    },
+    {
+      "id": 58,
+      "optimalMonth": 69,
+      "equity": 38149
+    },
+    {
+      "id": 59,
+      "optimalMonth": 57,
+      "equity": 10750
+    },
+    {
+      "id": 60,
+      "optimalMonth": 33,
+      "equity": 48499
+    },
+    {
+      "id": 61,
+      "optimalMonth": 45,
+      "equity": 34387
+    },
+    {
+      "id": 62,
+      "optimalMonth": 57,
+      "equity": 34574
+    },
+    {
+      "id": 63,
+      "optimalMonth": 45,
+      "equity": 41076
+    },
+    {
+      "id": 64,
+      "optimalMonth": 33,
+      "equity": 37632
+    },
+    {
+      "id": 65,
+      "optimalMonth": 57,
+      "equity": 10712
+    },
+    {
+      "id": 66,
+      "optimalMonth": 45,
+      "equity": 16525
+    },
+    {
+      "id": 67,
+      "optimalMonth": 69,
+      "equity": 19650
+    },
+    {
+      "id": 68,
+      "optimalMonth": 45,
+      "equity": 11442
+    },
+    {
+      "id": 69,
+      "optimalMonth": 54,
+      "equity": 21105
+    },
+    {
+      "id": 70,
+      "optimalMonth": 57,
+      "equity": 6840
+    },
+    {
+      "id": 71,
+      "optimalMonth": 57,
+      "equity": 9968
+    },
+    {
+      "id": 72,
+      "optimalMonth": 45,
+      "equity": 41411
+    },
+    {
+      "id": 73,
+      "optimalMonth": 33,
+      "equity": 30132
+    },
+    {
+      "id": 74,
+      "optimalMonth": 69,
+      "equity": 27023
+    },
+    {
+      "id": 75,
+      "optimalMonth": 57,
+      "equity": 19319
+    },
+    {
+      "id": 76,
+      "optimalMonth": 57,
+      "equity": 19252
+    },
+    {
+      "id": 77,
+      "optimalMonth": 69,
+      "equity": 33221
+    },
+    {
+      "id": 78,
+      "optimalMonth": 57,
+      "equity": 15748
+    },
+    {
+      "id": 79,
+      "optimalMonth": 33,
+      "equity": 34112
+    },
+    {
+      "id": 80,
+      "optimalMonth": 57,
+      "equity": 31090
+    },
+    {
+      "id": 81,
+      "optimalMonth": 57,
+      "equity": 47647
+    },
+    {
+      "id": 82,
+      "optimalMonth": 57,
+      "equity": 60322
+    },
+    {
+      "id": 83,
+      "optimalMonth": 69,
+      "equity": 50419
+    },
+    {
+      "id": 84,
+      "optimalMonth": 56,
+      "equity": 18992
+    },
+    {
+      "id": 85,
+      "optimalMonth": 45,
+      "equity": 27134
+    },
+    {
+      "id": 86,
+      "optimalMonth": 45,
+      "equity": 67235
+    },
+    {
+      "id": 87,
+      "optimalMonth": 69,
+      "equity": 34444
+    },
+    {
+      "id": 88,
+      "optimalMonth": 57,
+      "equity": 18825
+    },
+    {
+      "id": 89,
+      "optimalMonth": 33,
+      "equity": 54856
+    },
+    {
+      "id": 90,
+      "optimalMonth": 57,
+      "equity": 64772
+    },
+    {
+      "id": 91,
+      "optimalMonth": 45,
+      "equity": 114324
+    },
+    {
+      "id": 92,
+      "optimalMonth": 57,
+      "equity": 127655
+    },
+    {
+      "id": 93,
+      "optimalMonth": 45,
+      "equity": 35332
+    },
+    {
+      "id": 94,
+      "optimalMonth": 45,
+      "equity": 39040
+    },
+    {
+      "id": 95,
+      "optimalMonth": 45,
+      "equity": 57436
+    },
+    {
+      "id": 96,
+      "optimalMonth": 45,
+      "equity": 61778
+    },
+    {
+      "id": 97,
+      "optimalMonth": 69,
+      "equity": 72939
+    },
+    {
+      "id": 98,
+      "optimalMonth": 45,
+      "equity": 40977
+    },
+    {
+      "id": 99,
+      "optimalMonth": 45,
+      "equity": 52375
+    },
+    {
+      "id": 100,
+      "optimalMonth": 45,
+      "equity": 51602
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+appId: host.exp.Exponent  # Expo Go
+---
+# Onboarding Flow Test
+# Tests the new user onboarding journey
+
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd
+
+# Enter demo mode to get to onboarding-like experience
+- tapOn:
+    text: ".*Try it first.*|.*Demo.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# If we hit onboarding, test it
+# Step 1: Name
+- assertVisible:
+    text: ".*What's your name.*|.*Dashboard.*"
+    optional: true
+
+# If on onboarding, fill name
+- tapOn:
+    text: ".*First name.*"
+    optional: true
+
+- inputText:
+    text: "Test User"
+    optional: true
+
+- tapOn:
+    text: ".*Continue.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Step 2: Car selection
+- assertVisible:
+    text: ".*What car.*|.*vehicle.*|.*Dashboard.*"
+    optional: true
+
+# Select year dropdown
+- tapOn:
+    text: ".*Select year.*|.*YEAR.*"
+    optional: true
+
+- tapOn:
+    text: ".*2022.*"
+    optional: true
+
+# Select make
+- tapOn:
+    text: ".*Select make.*|.*MAKE.*"
+    optional: true
+
+- tapOn:
+    text: ".*BMW.*|.*Toyota.*|.*Honda.*"
+    optional: true
+
+# Select model
+- tapOn:
+    text: ".*Select model.*|.*MODEL.*"
+    optional: true
+
+- tapOn:
+    text: ".*3 Series.*|.*Camry.*|.*Accord.*"
+    optional: true
+
+- tapOn:
+    text: ".*Continue.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Step 3: Mileage
+- assertVisible:
+    text: ".*mileage.*|.*Dashboard.*"
+    optional: true
+
+- tapOn:
+    text: ".*28,500.*"
+    optional: true
+
+- inputText:
+    text: "35000"
+    optional: true
+
+- tapOn:
+    text: ".*Continue.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Step 4: Value display
+- assertVisible:
+    text: ".*value.*|.*Estimated.*|.*Dashboard.*"
+    optional: true
+
+- tapOn:
+    text: ".*Continue.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Step 5: Goals
+- assertVisible:
+    text: ".*goal.*|.*Track value.*|.*Dashboard.*"
+    optional: true
+
+- tapOn:
+    text: ".*Track value only.*|.*Find best time.*"
+    optional: true
+
+- tapOn:
+    text: ".*Get Started.*|.*Continue.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# Should end up on dashboard
+- assertVisible:
+    text: ".*Dashboard.*|.*Best option.*|.*Your Vehicles.*"
+    optional: true

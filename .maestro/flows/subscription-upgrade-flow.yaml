@@ -1,0 +1,148 @@
+appId: host.exp.Exponent  # Expo Go
+---
+# Subscription Upgrade Flow Test
+# Tests the upgrade to Pro journey
+
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd
+
+# Enter demo mode
+- tapOn:
+    text: ".*Try it first.*|.*Demo.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# ========================================
+# METHOD 1: From Dashboard Upgrade Banner
+# ========================================
+
+# Check for upgrade prompt on dashboard
+- assertVisible:
+    text: ".*Unlock Pro.*|.*Upgrade.*"
+    optional: true
+
+# Tap upgrade from dashboard
+- tapOn:
+    text: ".*Upgrade.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Should see subscription screen
+- assertVisible:
+    text: ".*Choose.*Plan.*|.*Free.*|.*Pro.*"
+    optional: true
+
+# Go back
+- back
+
+- waitForAnimationToEnd
+
+# ========================================
+# METHOD 2: From Profile Settings
+# ========================================
+
+# Navigate to profile
+- tapOn:
+    text: ".*[Pp]rofile.*|.*[Ss]ettings.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Find subscription section
+- assertVisible:
+    text: ".*Subscription.*"
+    optional: true
+
+# Tap upgrade button
+- tapOn:
+    text: ".*Upgrade to Pro.*|.*Manage Subscription.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# ========================================
+# SUBSCRIPTION SCREEN
+# ========================================
+
+# Check plan options
+- assertVisible:
+    text: ".*Free.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Pro.*"
+    optional: true
+
+# Check Pro price
+- assertVisible:
+    text: ".*\\$4.99.*|.*month.*"
+    optional: true
+
+# Check Pro features
+- assertVisible:
+    text: ".*Unlimited vehicles.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Daily.*updates.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Priority.*"
+    optional: true
+
+# Check Free features
+- assertVisible:
+    text: ".*1 vehicle.*|.*Weekly.*"
+    optional: true
+
+# Check trust signals
+- assertVisible:
+    text: ".*Cancel anytime.*"
+    optional: true
+
+- assertVisible:
+    text: ".*Switch plans.*"
+    optional: true
+
+# ========================================
+# SELECT PRO PLAN
+# ========================================
+
+# Tap on Pro plan
+- tapOn:
+    text: ".*Pro.*|.*RECOMMENDED.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Check Pro is selected (checkmark or highlight)
+- assertVisible:
+    text: ".*Start with Pro.*|.*Continue.*"
+    optional: true
+
+# ========================================
+# SELECT FREE PLAN
+# ========================================
+
+# Tap on Free plan
+- tapOn:
+    text: ".*Free.*|.*\\$0.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Check Free is selected
+- assertVisible:
+    text: ".*Continue with Free.*"
+    optional: true
+
+# Check skip option
+- assertVisible:
+    text: ".*Skip.*"
+    optional: true

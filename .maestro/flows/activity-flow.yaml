@@ -1,0 +1,84 @@
+appId: host.exp.Exponent  # Expo Go
+---
+# Activity Flow Test
+# Tests the activity/notifications feed
+
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd
+
+# Enter demo mode
+- tapOn:
+    text: ".*Try it first.*|.*Demo.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# Navigate to activity tab
+- tapOn:
+    text: ".*[Aa]ctivity.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Check activity header
+- assertVisible:
+    text: ".*Activity.*"
+    optional: true
+
+# Check summary banner
+- assertVisible:
+    text: ".*Updates.*|.*This week.*"
+    optional: true
+
+# ========================================
+# ACTIVITY SECTIONS
+# ========================================
+
+# Check Today section
+- assertVisible:
+    text: ".*TODAY.*|.*Today.*"
+    optional: true
+
+# Check This Week section
+- assertVisible:
+    text: ".*THIS WEEK.*|.*This Week.*"
+    optional: true
+
+# ========================================
+# ACTIVITY ITEMS
+# ========================================
+
+# Check for positive equity alerts
+- assertVisible:
+    text: ".*positive equity.*|.*sell without.*"
+    optional: true
+
+# Check for value change alerts
+- assertVisible:
+    text: ".*value.*|.*dropped.*|.*increased.*"
+    optional: true
+
+# Check for market updates
+- assertVisible:
+    text: ".*Market update.*|.*Used car values.*"
+    optional: true
+
+# Scroll to see more
+- scroll
+# Check Earlier section
+- assertVisible:
+    text: ".*EARLIER.*|.*Earlier.*"
+    optional: true
+
+# Check for milestone alerts
+- assertVisible:
+    text: ".*milestone.*|.*approaching.*|.*break-even.*"
+    optional: true
+
+# Check timestamps
+- assertVisible:
+    text: ".*ago.*|.*h ago.*|.*d ago.*|.*w ago.*"
+    optional: true

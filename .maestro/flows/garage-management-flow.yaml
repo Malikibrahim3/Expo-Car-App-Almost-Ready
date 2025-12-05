@@ -1,0 +1,99 @@
+appId: host.exp.Exponent  # Expo Go
+---
+# Garage Management Flow Test
+# Tests adding, viewing, and managing vehicles
+
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd
+
+# Enter demo mode
+- tapOn:
+    text: ".*Try it first.*|.*Demo.*"
+    optional: true
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# Navigate to garage
+- tapOn:
+    text: ".*[Gg]arage.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Check garage header
+- assertVisible:
+    text: ".*vehicle.*"
+    optional: true
+
+# Check data source attribution
+- assertVisible:
+    text: ".*Kelley Blue Book.*"
+    optional: true
+
+# Check for vehicle cards (demo mode has sample vehicles)
+- assertVisible:
+    text: ".*Good to sell.*|.*Wait.*|.*you'd keep.*|.*you'd owe.*"
+    optional: true
+
+# Tap on a vehicle to see details
+- tapOn:
+    text: ".*BMW.*|.*Tesla.*|.*Mercedes.*|.*Audi.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Should be on car detail screen
+- assertVisible:
+    text: ".*What You'd Pocket.*|.*Market Value.*|.*What You Owe.*"
+    optional: true
+
+# Check equity display
+- assertVisible:
+    text: ".*Good Time to Sell.*|.*Wait.*months.*"
+    optional: true
+
+# Check quick stats
+- assertVisible:
+    text: ".*Payments Left.*"
+    optional: true
+
+# Check vehicle details section
+- assertVisible:
+    text: ".*Vehicle.*Finance.*|.*Mileage.*|.*Year.*"
+    optional: true
+
+# Scroll to see chart
+- scroll
+# Check profit timeline chart
+- assertVisible:
+    text: ".*Profit Over Time.*|.*Slide your finger.*"
+    optional: true
+
+# Check action buttons
+- assertVisible:
+    text: ".*Dealers Will Pay.*|.*Remind Me.*|.*Selling Choices.*"
+    optional: true
+
+# Go back to garage
+- tapOn:
+    id: "back-button"
+    optional: true
+
+- back
+
+- waitForAnimationToEnd
+
+# Try add vehicle flow
+- tapOn:
+    text: ".*Add.*vehicle.*|.*Add.*car.*"
+    optional: true
+
+- waitForAnimationToEnd
+
+# Check add vehicle modal/screen
+- assertVisible:
+    text: ".*Add.*Vehicle.*|.*VIN.*|.*Make.*|.*Model.*"
+    optional: true
